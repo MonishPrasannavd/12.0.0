@@ -5,7 +5,8 @@ h4,
 h5,
 h6 {
     font-family: lexend, sans-serif;
-    color: var(--dark)
+    /* color: var(--dark) */
+    color:#325A9C;
 }
 
 .custom-font-secondary {
