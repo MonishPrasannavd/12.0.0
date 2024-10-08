@@ -20877,7 +20877,7 @@ section.timeline .timeline-number {
     line-height: 55px;
     margin: 0 auto 10px;
     border-radius: 100%;
-    background: var(--primary);
+    background: var(--primary) !important;
     z-index: 1
 }
 
