@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.single-slide-carousel').owlCarousel({
         items: 3, // Display three slides at a time
         loop: true, // Enable looping
-        nav: true, // Show navigation arrows
+        nav: false, // Show navigation arrows
         dots: false, // Enable dots for navigation
         margin: 20, // Margin between items
         autoplay: true, // Enable auto sliding
