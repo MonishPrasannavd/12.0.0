@@ -9272,7 +9272,7 @@ html[xmlns] .clearfix {
 
 .bg-color-secondary,
 .bg-secondary {
-    background-color: var(--secondary) !important
+    background-color: var(--primary) !important;
 }
 
 .bg-color-hover-secondary:hover,
@@ -9328,7 +9328,7 @@ html[xmlns] .clearfix {
 
 .bg-color-tertiary,
 .bg-tertiary {
-    background-color: var(--tertiary) !important
+    background-color: var(--primary) !important;
 }
 
 .bg-color-hover-tertiary:hover,
