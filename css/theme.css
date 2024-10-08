@@ -8550,7 +8550,7 @@ html[xmlns] .clearfix {
 
 .text-color-dark,
 .text-dark {
-    color: var(--dark) !important
+    color: #325a9c !important
 }
 
 .text-color-dark-100,
@@ -8606,7 +8606,7 @@ html[xmlns] .clearfix {
 
 .text-color-light,
 .text-light {
-    color: var(--light) !important
+    color: #325a9c !important
 }
 
 .text-color-light-100,
