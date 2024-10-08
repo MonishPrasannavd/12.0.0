@@ -329,7 +329,7 @@
 				<div class="container">
 
 					<div class="row justify-content-center py-5">
-						<div class="carousel-half-full-width-wrapper carousel-half-full-width-right">
+						<div class="carousel-half-full-width-right">
 							<div class="owl-carousel single-slide-carousel carousel-half-full-width-right nav-bottom nav-bottom-align-left nav-lg nav-transparent nav-borders-light nav-arrow-light rounded-nav mb-2"
 								data-plugin-options="{'responsive': {'0': {'items': 1}, '768': {'items': 3}, '992': {'items': 4}, '1200': {'items': 5}}, 'loop': true, 'nav': true, 'dots': false, 'margin': 20}">
 								<div class="border-radius-2 p-3 overflow-hidden">
@@ -1836,21 +1836,21 @@
 			</div>
 		</div>
 
-		<a class="style-switcher-open-loader" href="#" data-base-path=""
+		<!-- <a class="style-switcher-open-loader" href="#" data-base-path=""
 			data-skin-src="master/less/skin-accounting-1.less" data-bs-toggle="tooltip" data-bs-animation="false"
 			data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i>
 			<div class="style-switcher-tooltip"><strong>Style Switcher</strong>
 				<p>Check out different color options and styles.</p>
 			</div>
-		</a>
-
+		</a> -->
+<!-- 
 		<a class="envato-buy-redirect"
 			href="https://themeforest.net/checkout/from_item/4106987?license=regular&amp;support=bundle_6month&amp;ref=Okler"
 			target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right"
 			title="Buy Porto"><i class="fas fa-shopping-cart"></i></a>
 		<a class="demos-redirect" href="index.html#demos" data-bs-toggle="tooltip" data-bs-animation="false"
 			data-bs-placement="right" title="Demos"><img alt="Demos" src="img/icons/demos-redirect.png"
-				class="img-fluid" /></a>
+				class="img-fluid" /></a> -->
 
 
 		<!-- Vendor -->
@@ -1860,6 +1860,7 @@
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
+		
 
 		<!-- Demo -->
 		<script src="js/demos/demo-accounting-1.js"></script>
@@ -1869,39 +1870,7 @@
 
 		<!-- Current Page Vendor and Views -->
 		<script src="js/views/view.contact.js"></script>
-		<script>
-			$(document).ready(function () {
-				$('.single-slide-carousel').owlCarousel({
-					items: 3, // Display three slides at a time
-					loop: true, // Enable looping
-					nav: true, // Show navigation arrows
-					dots: false, // Hide dots
-					margin: 20, // Margin between items
-					autoplay: true, // Enable auto sliding
-					autoplayTimeout: 5000, // Time between slides (increase to 5 seconds)
-					autoplayHoverPause: true, // Pause on hover
-					smartSpeed:1200, // Speed of the transition (increase for slower transition)
-					animateOut: 'fadeOut', // Add fade out effect
-					responsive: {
-						0: {
-							items: 1 // 1 item on small screens
-						},
-						768: {
-							items: 2 // 2 items on medium screens
-						},
-						992: {
-							items: 3 // 3 items on large screens
-						},
-						1200: {
-							items: 3 // 3 items on extra-large screens
-						}
-					}
-				});
-			});
-
-
-
-		</script>
+		<script src="js/coustom.js"></script>
 
 </body>
 
