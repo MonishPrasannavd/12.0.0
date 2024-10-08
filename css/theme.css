@@ -17763,6 +17763,9 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
     padding-left: 25px;
     padding-right: 25px
 }
+.nav{
+    gap: 15px;
+}
 /* .carousel-container {
     display: flex;
     justify-content: center;
