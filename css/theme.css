@@ -8606,7 +8606,7 @@ html[xmlns] .clearfix {
 
 .text-color-light,
 .text-light {
-    color: #325a9c !important
+    color:var(--light-100) !important
 }
 
 .text-color-light-100,
