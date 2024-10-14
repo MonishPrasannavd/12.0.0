@@ -2999,7 +2999,8 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
     --hover: var(--dark--200);
     background-color: #DE5926;
     /* border-color: var(--dark) var(--dark) var(--dark-300); */
-    color: #325a9c;
+    /* color: #325a9c; */
+    color: #FFF;
 }
 
 .btn-dark:hover,
