@@ -17782,6 +17782,22 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
     display: block;
     margin: 0 auto;
   } */
-  @media (max-width:992px){
-
+  .modal-body .tab-content .tab-pane ul{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Optional: Remove padding */
+    margin: 0; /* Optional: Remove margin */
+  }
+  .modal-body .tab-content .tab-pane ul li a{
+    color: #000 !important;
+    font-size: 16px !important;
+  }
+  .countries{
+    display: flex;
+    justify-content:space-around;
+  }
+  .modal-body .tab-content .tab-pane ul li{
+    margin-bottom: 15px !important;
+  }
+  .demos-redirect i{
+    color: #fff !important;
   }
