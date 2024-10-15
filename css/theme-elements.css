@@ -14370,7 +14370,7 @@ ul.nav-list-arrows li a.active:after {
 }
 
 ul.nav-list-arrows li a.active:before {
-    color: var(--primary-inverse)
+    color:#fff;
 }
 
 ul.nav-list-arrows-simple li a:after {
