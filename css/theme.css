@@ -300,7 +300,8 @@ li {
     position: relative;
     top: 0;
     image-rendering: -webkit-optimize-contrast;
-    transform: translateZ(0)
+    transform: translateZ(0);
+    width: 200px;
 }
 
 #header .header-nav {
@@ -17786,3 +17787,22 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
     display: block;
     margin: 0 auto;
   } */
+  .modal-body .tab-content .tab-pane ul{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Optional: Remove padding */
+    margin: 0; /* Optional: Remove margin */
+  }
+  .modal-body .tab-content .tab-pane ul li a{
+    color: #000 !important;
+    font-size: 16px !important;
+  }
+  .countries{
+    display: flex;
+    justify-content:space-around;
+  }
+  .modal-body .tab-content .tab-pane ul li{
+    margin-bottom: 15px !important;
+  }
+  .demos-redirect i{
+    color: #fff !important;
+  }

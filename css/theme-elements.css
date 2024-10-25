@@ -13760,8 +13760,8 @@ body.page-transition-active {
 }
 
 .demos-redirect img {
-    max-width: 16px;
-    max-height: 16px
+    max-width: 22px;
+    max-height: 22px
 }
 
 @media(max-width:767px) {
@@ -14370,7 +14370,7 @@ ul.nav-list-arrows li a.active:after {
 }
 
 ul.nav-list-arrows li a.active:before {
-    color: var(--primary-inverse)
+    color:#fff;
 }
 
 ul.nav-list-arrows-simple li a:after {
@@ -14916,7 +14916,7 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .nav-link:hover {
-    color: var(--primary--100)
+    color: #df0b0b;
 }
 
 .nav-link:focus {
@@ -18158,7 +18158,7 @@ html.gecko .sort-destination.sort-destination-margin>[class*=col-] {
 
 .nav-tabs li .nav-link {
     border-radius: 5px 5px 0 0;
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 600;
     letter-spacing: -.2px;
     padding: 11.2px 24px;
@@ -18167,7 +18167,7 @@ html.gecko .sort-destination.sort-destination-margin>[class*=col-] {
     margin-right: 1px
 }
 
-.nav-tabs li .nav-link,
+/* .nav-tabs li .nav-link,
 .nav-tabs li .nav-link:hover {
     background: var(--grey-100);
     border-bottom: none;
@@ -18175,15 +18175,15 @@ html.gecko .sort-destination.sort-destination-margin>[class*=col-] {
     border-right: 1px solid #eee;
     border-top: 3px solid #eee;
     color: var(--grey-500)
-}
+} */
 
-.nav-tabs li .nav-link:hover {
+/* .nav-tabs li .nav-link:hover {
     border-bottom-color: transparent;
     border-top: 3px solid var(--grey-500);
     box-shadow: none
-}
+} */
 
-.nav-tabs li .nav-link:active,
+/* .nav-tabs li .nav-link:active,
 .nav-tabs li .nav-link:hover,
 .nav-tabs li .nav-link:focus {
     background: var(--light);
@@ -18191,16 +18191,16 @@ html.gecko .sort-destination.sort-destination-margin>[class*=col-] {
     border-right-color: #eee;
     border-top: 3px solid var(--grey-500);
     color: var(--grey-500)
-}
+} */
 
-.tab-content {
+/* .tab-content {
     border-radius: 0 0 4px 4px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .04);
     background-color: var(--light);
     border: 1px solid #eee;
     border-top: 0;
     padding: 15px
-}
+} */
 
 .nav-tabs.nav-right {
     text-align: right
