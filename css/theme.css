@@ -4142,7 +4142,12 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 
 @media(max-width:991px) {
     #header .header-logo img {
-        z-index: 1
+        z-index: 1;
+        width: 100% !important;
+    }
+
+    .desk-header{
+        display: none;
     }
 
     #header .header-nav {
