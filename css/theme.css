@@ -59,6 +59,9 @@ li {
     body {
         font-size: 13px
     }
+    .ms-sm-3-6{
+        margin-left: 1rem !important;
+    }
 }
 
 .offcanvas,
@@ -12986,6 +12989,9 @@ h6 .inverted {
     .text-lg-4-5 {
         font-size: 1.35em !important
     }
+    .text-lg-4-6 {
+        font-size: 1.45em !important
+    }
 
     .text-lg-5 {
         font-size: 1.5em !important
@@ -12999,7 +13005,6 @@ h6 .inverted {
     .text-lg-6 {
         font-size: 1.8em !important
     }
-
     .text-lg-6-7,
     .text-lg-6-5 {
         font-size: 1.9em !important
@@ -17806,3 +17811,4 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
   .demos-redirect i{
     color: #fff !important;
   }
+ 
