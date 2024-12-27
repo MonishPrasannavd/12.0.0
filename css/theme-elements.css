@@ -23164,6 +23164,12 @@ ul.team-list .team-item .thumb-info-social-icons {
         line-height: 100px
     }
 }
-#accordionWhyChooseUs .card .card-header .arrow-btn a:after {
+.accordion .who-we-are{
+    border: none !important;
+}
+#accordionWhyChooseUs .card .card-header .arrow-btn a:after{
     display: none !important;
+}
+.accordion.accordion-modern-status.accordion-modern-status-arrow-dark>.who-we-are .card-header a:after{
+   display: none !important;
 }

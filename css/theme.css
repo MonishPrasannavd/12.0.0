@@ -11623,6 +11623,9 @@ h6 .inverted {
 .pt-0 {
     padding-top: 0 !important
 }
+.mt-10{
+    margin-top:6rem !important ;
+}
 
 @media(min-width:576px) {
     .mb-sm-0 {
