@@ -7302,7 +7302,9 @@ hr.pattern.pattern-2:after,
 
 .feature-box .feature-box-info {
     flex: 1 1 100%;
-    padding-left: 15px
+    padding-left: 15px;
+    height: 135px;
+    align-content: center;
 }
 
 .feature-box.align-items-center .feature-box-icon {
