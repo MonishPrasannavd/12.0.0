@@ -4450,7 +4450,7 @@ body.dark .pagination>.active>a {
 }
 
 .owl-carousel .owl-nav {
-    top: 50%;
+    top: 51.5%;
     position: absolute;
     width: 100%;
     margin-top: 0;
@@ -4731,18 +4731,18 @@ body.dark .pagination>.active>a {
 }
 
 .owl-carousel.nav-inside.nav-inside-plus .owl-nav button.owl-prev {
-    left: 30px
+    left: 15px
 }
 
 .owl-carousel.nav-inside.nav-inside-plus .owl-nav button.owl-next {
-    right: 30px;
+    right: 15px;
     left: auto
 }
 
 .owl-carousel.nav-inside.nav-bottom .owl-nav {
     position: absolute;
     top: auto;
-    bottom: 40px;
+    bottom: 15px;
     width: 100%
 }
 
@@ -5169,7 +5169,8 @@ body.dark .pagination>.active>a {
 .owl-carousel.nav-lg.rounded-nav .owl-nav button.owl-prev:before,
 .owl-carousel.nav-lg.rounded-nav .owl-nav button.owl-next:before {
     font-size: 14.4px;
-    font-size: .9rem
+    font-size: .9rem;
+    color: #000 !important;
 }
 
 .owl-carousel.nav-lg.rounded-nav .owl-nav button.owl-prev:before {
@@ -5854,9 +5855,10 @@ body.dark .pagination>.active>a {
 }
 
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*=owl-] {
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
+    background-color: #FFF !important;
     border-color: var(--primary) var(--primary) var(--primary-300);
-    color: var(--primary-inverse)
+    /* color: var(--primary-inverse) */
 }
 
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*=owl-]:hover,
@@ -23159,4 +23161,7 @@ ul.team-list .team-item .thumb-info-social-icons {
         letter-spacing: 0;
         line-height: 100px
     }
+}
+#accordionWhyChooseUs .card .card-header .arrow-btn a:after {
+    display: none !important;
 }
