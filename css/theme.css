@@ -11626,6 +11626,9 @@ h6 .inverted {
 .mt-10{
     margin-top:6rem !important ;
 }
+.mb-md-7{
+    margin-bottom: 8.7rem !important;
+}
 
 @media(min-width:576px) {
     .mb-sm-0 {
@@ -11660,6 +11663,14 @@ h6 .inverted {
 
     .pt-md-0 {
         padding-top: 0 !important
+    }
+    .mb-md-7{
+        margin-bottom: 2.9rem !important;
+    }
+}
+@media(min-width:883px ){
+    .mb-md-7{
+        margin-bottom: 4.2rem !important;
     }
 }
 
