@@ -244,8 +244,9 @@
 
 							<div class="pt-2 pb-4">
 								<div class="carousel-half-full-width-wrapper carousel-half-full-width-right">
-									<div class="owl-carousel owl-theme carousel-half-full-width-right nav-bottom nav-lg nav-transparent nav-borders nav-bottom-align-left rounded-nav mb-2"
-										data-plugin-options="{ 'responsive': { '0': {'items': 1}, '768': {'items': 1},'992': {'items': 1.5}, '1200': {'items': 1.5}}, 'loop': true, 'nav': false,'dots': false,'margin': 20,'autoplay': true,'autoplayTimeout': 7000,'smartSpeed': 3000}">
+									<div id="carousel1"
+										class="owl-carousel owl-theme carousel-half-full-width-right nav-bottom nav-lg nav-transparent nav-borders nav-bottom-align-left rounded-nav mb-2"
+										data-plugin-options="{ 'responsive': { '0': {'items': 1}, '768': {'items': 1.08},'992': {'items': 1.5}, '1280': {'items': 1.26}}, 'loop': true, 'nav': false,'dots': false,'margin': 20,'autoplay': true,'autoplayTimeout': 7000,'smartSpeed': 3000}">
 
 										<div class="border-radius-2 overflow-hidden">
 											<div class="bg-light">
@@ -325,8 +326,8 @@
 																			Financial Strategies.</li>
 																		<li>Selected as one of Asia’s 100 Power Leaders
 																			in Finance – 2022.</li>
-																		<!-- <li>Demonstrated expertise in setting up Finance
-																			Shared Services, Automation, and more.</li> -->
+																		<li>Demonstrated expertise in setting up Finance
+																			Shared Services, Automation, and more.</li>
 																		<li>Work experience with prestigious
 																			organizations such as Varsity Education
 																			Management Pvt Ltd, Apollo Health and
@@ -447,8 +448,18 @@
 								<div class="pt-2 pb-4">
 									<div class="carousel-half-full-width-wrapper carousel-half-full-width-right">
 										<div class="owl-carousel owl-theme carousel-half-full-width-right nav-bottom nav-lg nav-transparent nav-borders nav-bottom-align-left rounded-nav mb-2"
-											data-plugin-options="{ 'responsive': { '0': {'items': 1}, '768': {'items': 1},'992': {'items': 2}, '1200': {'items': 3}}, 'loop': true, 'nav': false,'dots': false,'margin': 20,'autoplay': true,'autoplayTimeout': 7000,'smartSpeed': 3000}">
-
+											data-plugin-options="{
+                                            'responsive': {
+                                                '0': {'items': 1, 'autoplay': true, 'autoplayTimeout': 6000, 'smartSpeed': 3000},
+                                                '768': {'items': 2.17, 'autoplay': true, 'autoplayTimeout': 6000, 'smartSpeed': 3000},
+                                                '992': {'items': 2, 'autoplay': true, 'autoplayTimeout': 6000, 'smartSpeed': 3000},
+                                                '1200': {'items': 4.25, 'autoplay': false}
+                                            },
+                                            'loop': true,
+                                            'nav': false,
+                                            'dots': false,
+                                            'margin': 20
+                                        }">
 											<div class="border-radius-2 overflow-hidden">
 												<div class="bg-light">
 													<div class="row ">
@@ -461,11 +472,14 @@
 																		loading="lazy" class="img-fluid" alt="">
 																</span>
 																<span class="thumb-info-content">
-																	<span class="thumb-info-content-inner bg-light p-4">
-																		<h4 class="text-5 mb-1">Mr.Jhone Doe
-																		</h4>
-																		<p class="line-height-7 text-3 mb-0">Founder
-																		</p>
+																	<h4 class="text-4 mb-1 ps-3 pt-3">Mr.Jhone Doe
+																	</h4>
+																	<p class="line-height-7 text-3 mb-0 ps-3">
+																		<b>Marketing
+																			Manager</b>
+																	</p>
+																	<!-- <span class="thumb-info-content-inner bg-light p-4">
+																		
 																		<span
 																			class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
 																			<ul
@@ -493,16 +507,20 @@
 																				</li>
 																			</ul>
 																		</span>
-																	</span>
+																	</span> -->
 																</span>
 															</span>
 														</div>
 														<div class="col-lg-12">
-															<div class="content-info p-3">
-																<p class="mb-0 text-3">
-																	<b>
-																		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis dolorem doloribus tempore consequuntur quaerat nobis, magni sed? Culpa modi magnam porro fuga necessitatibus dicta, consectetur obcaecati? Molestias corporis facere quo?
-																	</b>
+															<div class="content- px-3 py-1 pb-3">
+																<p class="mb-0 text-2">
+
+																	Lorem ipsum dolor sit amet consectetur
+																	adipisicing elit. Praesentium facilis soluta
+																	provident maiores deleniti vero minus odit
+																	quaerat voluptates aut, temporibus dicta porro
+																	suscipit et eius beatae. Omnis, at hic?
+
 																</p>
 															</div>
 														</div>
@@ -523,11 +541,13 @@
 																		loading="lazy" class="img-fluid" alt="">
 																</span>
 																<span class="thumb-info-content">
-																	<span class="thumb-info-content-inner bg-light p-4">
-																		<h4 class="text-5 mb-1">Mr.Jhone Doe
-																		</h4>
-																		<p class="line-height-7 text-3 mb-0">Founder
-																		</p>
+																	<h4 class="text-4 mb-1 ps-3 pt-3">Ms.Jhone Doe
+																	</h4>
+																	<p class="line-height-7 text-3 mb-0 ps-3">
+																		<b>Technical Support</b>
+																	</p>
+																	<!-- <span class="thumb-info-content-inner bg-light p-4">
+																		
 																		<span
 																			class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
 																			<ul
@@ -555,21 +575,26 @@
 																				</li>
 																			</ul>
 																		</span>
-																	</span>
+																	</span> -->
 																</span>
 															</span>
 														</div>
 														<div class="col-lg-12">
-															<div class="content-info p-3">
-																<p class="mb-0 text-3">
-																	<b>
-																		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora cupiditate asperiores ipsa dolor eligendi tenetur nulla maiores nemo neque illum voluptate blanditiis, illo ipsam magnam vero laboriosam! Vero, error at.
-																	</b>
+															<div class="content- px-3 py-1 pb-3">
+																<p class="mb-0 text-2">
+
+																	Lorem ipsum dolor sit amet consectetur
+																	adipisicing elit. Praesentium facilis soluta
+																	provident maiores deleniti vero minus odit
+																	quaerat voluptates aut, temporibus dicta porro
+																	suscipit et eius beatae. Omnis, at hic?
+
 																</p>
 															</div>
 														</div>
 													</div>
 												</div>
+
 											</div>
 
 											<div class="border-radius-2 overflow-hidden">
@@ -580,15 +605,17 @@
 																class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
 																<span
 																	class="thumb-info-wrapper border-radius-0 rounded-top">
-																	<img src="img/demos/accounting-1/team/team-4.jpg"
+																	<img src="img/demos/accounting-1/team/team-5.jpg"
 																		loading="lazy" class="img-fluid" alt="">
 																</span>
 																<span class="thumb-info-content">
-																	<span class="thumb-info-content-inner bg-light p-4">
-																		<h4 class="text-5 mb-1">Mr.Jhone Doe
-																		</h4>
-																		<p class="line-height-7 text-3 mb-0">Founder
-																		</p>
+																	<h4 class="text-4 mb-1 ps-3 pt-3">Ms.Jhone Doe
+																	</h4>
+																	<p class="line-height-7 text-3 mb-0 ps-3">Ops
+																		Manger</b>
+																	</p>
+																	<!-- <span class="thumb-info-content-inner bg-light p-4">
+																		
 																		<span
 																			class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
 																			<ul
@@ -616,16 +643,20 @@
 																				</li>
 																			</ul>
 																		</span>
-																	</span>
+																	</span> -->
 																</span>
 															</span>
 														</div>
-														<div class="col-lg-11">
-															<div class="content-info p-3">
-																<p class="mb-0 text-3">
-																	<b>
-																		Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis soluta provident maiores deleniti vero minus odit quaerat voluptates aut, temporibus dicta porro suscipit et eius beatae. Omnis, at hic?
-																	</b>
+														<div class="col-lg-12">
+															<div class="content- px-3 py-1 pb-3">
+																<p class="mb-0 text-2">
+
+																	Lorem ipsum dolor sit amet consectetur
+																	adipisicing elit. Praesentium facilis soluta
+																	provident maiores deleniti vero minus odit
+																	quaerat voluptates aut, temporibus dicta porro
+																	suscipit et eius beatae. Omnis, at hic?
+
 																</p>
 															</div>
 														</div>
@@ -635,6 +666,74 @@
 											</div>
 
 											<div class="border-radius-2 overflow-hidden">
+												<div class="bg-light">
+													<div class="row ">
+														<div class="col-lg-12">
+															<span
+																class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
+																<span
+																	class="thumb-info-wrapper border-radius-0 rounded-top">
+																	<img src="img/demos/accounting-1/team/team-6.jpg"
+																		loading="lazy" class="img-fluid" alt="">
+																</span>
+																<span class="thumb-info-content">
+																	<h4 class="text-4 mb-1 ps-3 pt-3">Mr.Jhone Doe
+																	</h4>
+																	<p class="line-height-7 text-3 mb-0 ps-3">
+																		Development Manger</b>
+																	</p>
+																	<!-- <span class="thumb-info-content-inner bg-light p-4">
+																		
+																		<span
+																			class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
+																			<ul
+																				class="social-icons social-icons-clean social-icons-medium">
+																				<li class="social-icons-instagram">
+																					<a href="http://www.instagram.com/"
+																						target="_blank"
+																						title="Instagram">
+																						<i class="fab fa-instagram"></i>
+																					</a>
+																				</li>
+																				<li class="social-icons-x">
+																					<a href="http://www.x.com/"
+																						target="_blank" title="X">
+																						<i class="fab fa-x-twitter"></i>
+																					</a>
+																				</li>
+																				<li class="social-icons-facebook">
+																					<a href="http://www.facebook.com/"
+																						target="_blank"
+																						title="Facebook">
+																						<i
+																							class="fab fa-facebook-f"></i>
+																					</a>
+																				</li>
+																			</ul>
+																		</span>
+																	</span> -->
+																</span>
+															</span>
+														</div>
+														<div class="col-lg-12">
+															<div class="content- px-3 py-1 pb-3">
+																<p class="mb-0 text-2">
+
+																	Lorem ipsum dolor sit amet consectetur
+																	adipisicing elit. Praesentium facilis soluta
+																	provident maiores deleniti vero minus odit
+																	quaerat voluptates aut, temporibus dicta porro
+																	suscipit et eius beatae. Omnis, at hic?
+
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+											<!-- <div class="border-radius-2 overflow-hidden">
 												<div class="bg-light">
 													<div class="row ">
 														<div class="col-lg-12">
@@ -693,7 +792,7 @@
 														</div>
 													</div>
 												</div>
-											</div>
+											</div> -->
 										</div>
 									</div>
 								</div>
