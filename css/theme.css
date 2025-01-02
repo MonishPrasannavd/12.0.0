@@ -17828,4 +17828,10 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
   .who-we-text{
     text-align: justify;
   }
- 
+ .btn-white{
+    background-color: #fff;
+ }
+ .btn-white:hover{
+    background-color: #fff;
+    color: #000;
+ }
