@@ -15129,7 +15129,7 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .overlay-gradient-bottom-content:before {
-    opacity: 1 !important;
+    opacity: 0.1 !important;
     background: var(--dark);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, var(--dark) 100%)
 }
