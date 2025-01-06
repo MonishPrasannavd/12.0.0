@@ -17835,3 +17835,9 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
     background-color: #fff;
     color: #000;
  }
+ .our-value li p b{
+    color: var(--primary);
+}
+.our-value li p b span{
+    color: #325A9C !important;
+}

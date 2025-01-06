@@ -5919,7 +5919,9 @@ body.dark .pagination>.active>a {
 }
 
 .cascading-images-wrapper .cascading-images img {
-    max-width: 100%
+    width: 550px;
+    max-width: 100%;
+    border-radius: 15px;
 }
 
 .countdown {
@@ -23173,3 +23175,9 @@ ul.team-list .team-item .thumb-info-social-icons {
 .accordion.accordion-modern-status.accordion-modern-status-arrow-dark>.who-we-are .card-header a:after{
    display: none !important;
 }
+.fig-img-container{
+    width: 270px;
+    height: auto;
+    margin: 0px auto;
+}
+
