@@ -5919,7 +5919,9 @@ body.dark .pagination>.active>a {
 }
 
 .cascading-images-wrapper .cascading-images img {
-    max-width: 100%
+    width: 550px;
+    max-width: 100%;
+    border-radius: 15px;
 }
 
 .countdown {
@@ -15129,7 +15131,7 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .overlay-gradient-bottom-content:before {
-    opacity: 1 !important;
+    opacity: 0.1 !important;
     background: var(--dark);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, var(--dark) 100%)
 }
@@ -23173,3 +23175,14 @@ ul.team-list .team-item .thumb-info-social-icons {
 .accordion.accordion-modern-status.accordion-modern-status-arrow-dark>.who-we-are .card-header a:after{
    display: none !important;
 }
+.fig-img-container{
+    width: 270px;
+    height: auto;
+    margin: 0px auto;
+}
+
+.keyli li span{
+    color: #DE5927;
+    font-weight: 600 !important;
+}
+

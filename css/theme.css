@@ -12655,6 +12655,9 @@ h6 .inverted {
 .text-4 {
     font-size: 1.2em !important
 }
+.text-4-2 {
+    font-size: 1.3em !important
+}
 
 .text-4-5 {
     font-size: 1.35em !important
@@ -17835,3 +17838,9 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
     background-color: #fff;
     color: #000;
  }
+ .our-value li p b{
+    color: var(--primary);
+}
+.our-value li p b span{
+    color: #325A9C !important;
+}
