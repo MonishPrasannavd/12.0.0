@@ -14862,7 +14862,8 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .nav-pills-dark a {
-    color: var(--dark)
+    /* color: var(--dark) */
+    color: #FFF;
 }
 
 .nav-pills-dark a:hover {
@@ -14879,7 +14880,8 @@ html.boxed .nav-secondary.sticky-active {
 
 .nav-pills-dark .nav-link.active,
 .nav-pills-dark>li.active>a {
-    background-color: var(--dark)
+    /* background-color: var(--dark) */
+    background-image: linear-gradient(to right, var(--secondary-rgba-30) 30%, var(--dark) 200%) !important;
 }
 
 .nav-pills-dark .nav-link.active:hover,
@@ -23184,5 +23186,13 @@ ul.team-list .team-item .thumb-info-social-icons {
 .keyli li span{
     color: #DE5927;
     font-weight: 600 !important;
+}
+
+.contact-tab{
+    background-color: #DE5927;
+    width: 100%;
+    border-radius: 7px;
+    padding: 8px;
+    color: #FFF !important;
 }
 
