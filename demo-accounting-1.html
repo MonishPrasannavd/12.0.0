@@ -92,13 +92,13 @@
 												</a>
 											</li>
 											<li class="dropdown">
-												<a href="#"
-													class="nav-link dropdown-toggle">Products</a>
+												<a href="#" class="nav-link dropdown-toggle">Products</a>
 												<ul class="dropdown-menu">
 													<li><a href="demo-accounting-1-process.html"
-														class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">About Compseqr360
-													</a>
-												</li>
+															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">About
+															Compseqr360
+														</a>
+													</li>
 													<li><a href="demo-accounting-1-services-details.html"
 															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">ProEDox
 															(Document Management System)</a>
@@ -622,7 +622,7 @@
 											Experience</span>
 									</div>
 								</div>
-								
+
 							</div>
 
 							<!-- <div class="appear-animation" data-appear-animation="fadeInUpShorter"
@@ -1506,17 +1506,7 @@
 						</div>
 						<div class="col-lg-6 p-relative">
 
-							<form class="contact-form"
-								action="https://www.okler.net/previews/porto/12.0.0/php/contact-form.php" method="POST">
-								<div class="contact-form-success alert alert-success d-none mt-4">
-									<strong>Success!</strong> Your message has been sent to us.
-								</div>
-
-								<div class="contact-form-error alert alert-danger d-none mt-4">
-									<strong>Error!</strong> There was an error sending your message.
-									<span class="mail-error-message text-1 d-block"></span>
-								</div>
-
+							<form class="contact-form" id="contact-form">
 								<div class="row">
 									<div class="form-group col-lg-6">
 										<label
@@ -1525,7 +1515,7 @@
 										<input type="text" value="" placeholder="Enter your name"
 											data-msg-required="Please enter your name." maxlength="100"
 											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="name" required>
+											name="from_name" required>
 									</div>
 									<div class="form-group col-lg-6">
 										<label
@@ -1544,16 +1534,18 @@
 											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Phone
 											Number</label>
 										<input type="tel" value="" placeholder="Enter your phone number"
+										    data-msg-required="Please enter your Mobile Number." maxlength="10"
 											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="phone">
+											name="mobilenumber" required>
 									</div>
 									<div class="form-group col-lg-6">
 										<label
 											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Company
 											Name</label>
 										<input type="text" value="" placeholder="Enter your company name"
+										    data-msg-required="Please enter your company name."
 											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="company">
+											name="company" required>
 									</div>
 								</div>
 								<div class="row">
@@ -1561,16 +1553,18 @@
 										<label
 											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Industry</label>
 										<input type="text" value="" placeholder="Enter your industry name"
+										    data-msg-required="Please enter your industry name."
 											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="industry">
+											name="industry" required>
 									</div>
 									<div class="form-group col-lg-6">
 										<label
 											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Annual
 											Revenue</label>
 										<input type="text" value="" placeholder="Enter your annual revenue"
+										data-msg-required="Please enter your annual revenue."
 											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="revenue">
+											name="revenue" required>
 									</div>
 								</div>
 								<div class="row">
@@ -1588,7 +1582,7 @@
 									<div class="form-group col">
 										<button type="submit"
 											class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium btn-swap-1"
-											data-clone-element="1">
+											data-clone-element="1" id="submit-btn">
 											<span>Submit <i
 													class="fa-solid fa-arrow-right ms-2 p-relative left-10"></i></span>
 										</button>
@@ -1857,8 +1851,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="#"
-										class="text-color-grey text-color-hover-primary">Products</a>
+									<a href="#" class="text-color-grey text-color-hover-primary">Products</a>
 								</li>
 								<li>
 									<a class="text-color-grey text-color-hover-primary"
@@ -1896,7 +1889,7 @@
 							<h4 class="text-color-dark font-weight-bold mb-3">Products</h4>
 							<ul class="list list-unstyled">
 								<li><a href="demo-accounting-1-process.html"
-									class="text-color-grey text-color-hover-primary">About Compseqr360								</a></li>
+										class="text-color-grey text-color-hover-primary">About Compseqr360 </a></li>
 								<li><a href="demo-accounting-1-services-details.html"
 										class="text-color-grey text-color-hover-primary">⁠ProEDox (Document Management
 										System)</a></li>
@@ -1989,6 +1982,55 @@
 		<!-- Current Page Vendor and Views -->
 		<script src="js/views/view.contact.js"></script>
 		<script src="js/coustom.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+		<script>
+			emailjs.init('l15-GfCBL9ZKOOSls');  // Initialize EmailJS with your user ID
+		  
+			// Handle form submission
+			document.getElementById('contact-form').addEventListener('submit', function (event) {
+			  event.preventDefault(); // Prevent the default form submission
+		  
+			  const form = this;
+			  const submitBtn = document.getElementById('submit-btn');
+			  
+			  // Manually check if the form is valid
+			  if (form.checkValidity() === false) {
+				// If the form is invalid, show a message and stop submission
+				alert("Please fill in all the required fields.");
+				return;
+			  }
+		  
+			  submitBtn.innerText = 'Sending...'; // Change button text during submission
+			  submitBtn.disabled = true; // Disable the button to prevent multiple submissions
+		  
+			  const serviceID = 'default_service'; // Replace with your service ID
+			  const templateID = 'template_l9u4p7i'; // Replace with your template ID
+		  
+			  // Send form data to EmailJS
+			  emailjs.sendForm(serviceID, templateID, form)
+				.then(() => {
+				  submitBtn.innerText = 'Send Message'; // Reset button text on success
+				  submitBtn.disabled = false; // Enable the button again
+				  alert('Message sent successfully!');
+		  
+				  // Reset the form after success
+				  setTimeout(() => {
+					form.reset(); // Reset the form fields
+				  }, 500); // Small delay to allow user to see the success alert
+				})
+				.catch((err) => {
+				  submitBtn.innerText = 'Send Message'; // Reset button text on error
+				  submitBtn.disabled = false; // Enable the button in case of error
+				  alert('Failed to send message. Please try again.');
+				  console.error('Error:', err);
+				});
+			});
+		  </script>
+		  
+		  
+		  
+		  
+
 
 </body>
 
