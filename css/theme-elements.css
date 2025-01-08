@@ -14436,7 +14436,7 @@ ul.nav-pills>li>a.active {
 ul.nav-pills>li>a.active:hover,
 ul.nav-pills>li>a.active:focus {
     color: var(--light);
-    background-color: var(--grey-500)
+    /* background-color: var(--grey-500) */
 }
 
 .nav-pills-center {
@@ -14733,14 +14733,16 @@ html.boxed .nav-secondary.sticky-active {
 
 .nav-pills>li.active>a,
 .nav-pills .nav-link.active {
-    background-color: var(--primary)
+    /* background-color: var(--primary) */
+    background-image: linear-gradient(to right, var(--secondary-rgba-30) 30%, var(--dark) 200%) !important;
 }
 
 .nav-pills>li.active>a:hover,
 .nav-pills>li.active>a:focus,
 .nav-pills .nav-link.active:hover,
 .nav-pills .nav-link.active:focus {
-    background-color: var(--primary)
+    /* background-color: var(--primary) */
+    background-image: linear-gradient(to right, var(--secondary-rgba-30) 30%, var(--dark) 200%) !important;
 }
 
 .nav-active-style-1>li>a:hover,
@@ -14867,15 +14869,18 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 .nav-pills-dark a:hover {
-    color: var(--dark--100)
+    /* color: var(--dark--100) */
+    color: #FFF;
 }
 
 .nav-pills-dark a:focus {
-    color: var(--dark--100)
+    /* color: var(--dark--100) */
+    color: #fff;
 }
 
 .nav-pills-dark a:active {
-    color: var(--dark-100)
+    /* color: var(--dark-100) */
+    color: #FFF;
 }
 
 .nav-pills-dark .nav-link.active,
@@ -14888,7 +14893,8 @@ html.boxed .nav-secondary.sticky-active {
 .nav-pills-dark .nav-link.active:focus,
 .nav-pills-dark>li.active>a:hover,
 .nav-pills-dark>li.active>a:focus {
-    background-color: var(--dark)
+    /* background-color: var(--dark) */
+    background-image: linear-gradient(to right, var(--secondary-rgba-30) 30%, var(--dark) 200%) !important;
 }
 
 .nav-pills-light a {
@@ -23192,7 +23198,7 @@ ul.team-list .team-item .thumb-info-social-icons {
     background-color: #DE5927;
     width: 100%;
     border-radius: 7px;
-    padding: 8px;
+    padding: 6px;
     color: #FFF !important;
 }
 
