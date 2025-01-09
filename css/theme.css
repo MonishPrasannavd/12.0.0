@@ -17846,5 +17846,6 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
 }
 
 .footer{
-    background-color: red!important;
+    background-color: #F9FAFB!important;
+    border: none!important;
 }
