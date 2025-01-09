@@ -16215,7 +16215,7 @@ html body .rounded-circle {
 }
 
 #footer {
-    background: var(--dark);
+    /* background: var(--dark); */
     border-top: 4px solid var(--dark);
     font-size: .9em;
     margin-top: 50px;
@@ -17843,4 +17843,8 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
 }
 .our-value li p b span{
     color: #325A9C !important;
+}
+
+.footer{
+    background-color: red!important;
 }
