@@ -7305,7 +7305,7 @@ hr.pattern.pattern-2:after,
 .feature-box .feature-box-info {
     flex: 1 1 100%;
     padding-left: 15px;
-    height: 135px;
+    /* height: 135px; */
     align-content: center;
 }
 
@@ -14734,7 +14734,8 @@ html.boxed .nav-secondary.sticky-active {
 .nav-pills>li.active>a,
 .nav-pills .nav-link.active {
     /* background-color: var(--primary) */
-    background-image: linear-gradient(to right, var(--secondary-rgba-30) 30%, var(--dark) 200%) !important;
+    background-color: #fff;
+    color: #000;
 }
 
 .nav-pills>li.active>a:hover,
@@ -14742,7 +14743,8 @@ html.boxed .nav-secondary.sticky-active {
 .nav-pills .nav-link.active:hover,
 .nav-pills .nav-link.active:focus {
     /* background-color: var(--primary) */
-    background-image: linear-gradient(to right, var(--secondary-rgba-30) 30%, var(--dark) 200%) !important;
+    background-color: #fff;
+    color: #000;
 }
 
 .nav-active-style-1>li>a:hover,
@@ -14886,7 +14888,7 @@ html.boxed .nav-secondary.sticky-active {
 .nav-pills-dark .nav-link.active,
 .nav-pills-dark>li.active>a {
     /* background-color: var(--dark) */
-    background-image: linear-gradient(to right, var(--secondary-rgba-30) 30%, var(--dark) 200%) !important;
+   background-color: #fff;
 }
 
 .nav-pills-dark .nav-link.active:hover,
@@ -14894,7 +14896,7 @@ html.boxed .nav-secondary.sticky-active {
 .nav-pills-dark>li.active>a:hover,
 .nav-pills-dark>li.active>a:focus {
     /* background-color: var(--dark) */
-    background-image: linear-gradient(to right, var(--secondary-rgba-30) 30%, var(--dark) 200%) !important;
+    background-color: #fff;
 }
 
 .nav-pills-light a {
@@ -23195,7 +23197,7 @@ ul.team-list .team-item .thumb-info-social-icons {
 }
 
 .contact-tab{
-    background-color: #DE5927;
+    background-color: #000;
     width: 100%;
     border-radius: 7px;
     padding: 6px;

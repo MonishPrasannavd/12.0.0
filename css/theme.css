@@ -2012,7 +2012,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
     }
 
     #header .header-nav-main.header-nav-main-text-capitalize nav>ul>li>a {
-        text-transform: capitalize
+        text-transform:none
     }
 
     #header .header-nav-main.header-nav-main-text-size-2 nav>ul>li>a {
@@ -17848,4 +17848,8 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
 .footer{
     background-color: #F9FAFB!important;
     border: none!important;
+}
+
+.banner-tagline{
+    line-height: 1.4!important;
 }
