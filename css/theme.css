@@ -2292,7 +2292,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
     }
 }
 
-@media(min-width:992px) and (min-width:1200px) {
+/* @media(min-width:992px) and (min-width:1200px) {
 
     #header .header-nav.header-nav-links nav>ul>li>a,
     #header .header-nav.header-nav-links nav>ul>li:hover>a,
@@ -2300,7 +2300,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
     #header .header-nav.header-nav-line nav>ul>li:hover>a {
         padding: 0 .9rem
     }
-}
+} */
 
 @media(min-width:992px) {
 
