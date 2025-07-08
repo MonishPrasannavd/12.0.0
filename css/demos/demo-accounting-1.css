@@ -71,7 +71,7 @@ p {
 
     #header .header-nav.header-nav-links:not(.header-nav-light-text) nav>ul>li>a.active {
         /* color: var(--dark-rgba-50) !important */
-        color: #325A9C !important;
+        color: #DE5926 !important;
     }
 
     #header .header-nav.header-nav-links:not(.header-nav-light-text) nav>ul>li.dropdown:not(.dropdown-mega) .dropdown-menu {
