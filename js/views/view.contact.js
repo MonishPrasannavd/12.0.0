@@ -45,21 +45,47 @@
               : "Loading..."
           )
           .attr("disabled", true);
-        const formData = $form.serializeArray(),
-          data = {};
-        $(formData).each((index, { name, value }) => {
-          if (data[name]) {
-            data[name] = data[name] + ", " + value;
-          } else {
-            data[name] = value;
+        
+        // Check if form has file inputs
+        const hasFileInput = $form.find('input[type="file"]').length > 0;
+        let ajaxData, ajaxOptions;
+        
+        if (hasFileInput) {
+          // Use FormData for file uploads
+          const formData = new FormData(form);
+          ajaxData = formData;
+          ajaxOptions = {
+            type: "POST",
+            url: $form.attr("action"),
+            data: ajaxData,
+            processData: false,
+            contentType: false
+          };
+        } else {
+          // Use serializeArray for regular forms
+          const formData = $form.serializeArray();
+          const data = {};
+          $(formData).each((index, { name, value }) => {
+            if (data[name]) {
+              data[name] = data[name] + ", " + value;
+            } else {
+              data[name] = value;
+            }
+          });
+          if (data["g-recaptcha-response"] != undefined) {
+            data["g-recaptcha-response"] = $form
+              .find("#g-recaptcha-response")
+              .val();
           }
-        });
-        if (data["g-recaptcha-response"] != undefined) {
-          data["g-recaptcha-response"] = $form
-            .find("#g-recaptcha-response")
-            .val();
+          ajaxData = data;
+          ajaxOptions = {
+            type: "POST",
+            url: $form.attr("action"),
+            data: ajaxData
+          };
         }
-        $.ajax({ type: "POST", url: $form.attr("action"), data }).always(
+        
+        $.ajax(ajaxOptions).always(
           ({ response, errorMessage, responseText }, textStatus, jqXHR) => {
             $errorMessage.empty().hide();
             if (response == "success") {
@@ -74,7 +100,9 @@
                 .removeClass("has-danger")
                 .find("label.error")
                 .remove();
-              if ($messageSuccess.offset().top - 80 < $(window).scrollTop()) {
+              // Reset file inputs
+              $form.find('input[type="file"]').val("");
+              if ($messageSuccess.length && $messageSuccess.offset() && $messageSuccess.offset().top - 80 < $(window).scrollTop()) {
                 $("html, body").animate(
                   { scrollTop: $messageSuccess.offset().top - 80 },
                   300
@@ -93,7 +121,7 @@
             }
             $messageError.removeClass("d-none");
             $messageSuccess.addClass("d-none");
-            if ($messageError.offset().top - 80 < $(window).scrollTop()) {
+            if ($messageError.length && $messageError.offset() && $messageError.offset().top - 80 < $(window).scrollTop()) {
               $("html, body").animate(
                 { scrollTop: $messageError.offset().top - 80 },
                 300
@@ -163,13 +191,39 @@
           newURL = new URL(recaptchaSrcURL),
           site_key = newURL.searchParams.get("render");
         grecaptcha.execute(site_key, { action: "contact_us" }).then((token) => {
-          const formData = $form.serializeArray(),
-            data = {};
-          $(formData).each((index, { name, value }) => {
-            data[name] = value;
-          });
-          data["g-recaptcha-response"] = token;
-          $.ajax({ type: "POST", url: $form.attr("action"), data }).always(
+          // Check if form has file inputs
+          const hasFileInput = $form.find('input[type="file"]').length > 0;
+          let ajaxData, ajaxOptions;
+          
+          if (hasFileInput) {
+            // Use FormData for file uploads
+            const formDataObj = new FormData(form);
+            formDataObj.append("g-recaptcha-response", token);
+            ajaxData = formDataObj;
+            ajaxOptions = {
+              type: "POST",
+              url: $form.attr("action"),
+              data: ajaxData,
+              processData: false,
+              contentType: false
+            };
+          } else {
+            // Use serializeArray for regular forms
+            const formData = $form.serializeArray();
+            const data = {};
+            $(formData).each((index, { name, value }) => {
+              data[name] = value;
+            });
+            data["g-recaptcha-response"] = token;
+            ajaxData = data;
+            ajaxOptions = {
+              type: "POST",
+              url: $form.attr("action"),
+              data: ajaxData
+            };
+          }
+          
+          $.ajax(ajaxOptions).always(
             ({ response, errorMessage, responseText }, textStatus, jqXHR) => {
               $errorMessage.empty().hide();
               if (response == "success") {
@@ -184,7 +238,9 @@
                   .removeClass("has-danger")
                   .find("label.error")
                   .remove();
-                if ($messageSuccess.offset().top - 80 < $(window).scrollTop()) {
+                // Reset file inputs
+                $form.find('input[type="file"]').val("");
+                if ($messageSuccess.length && $messageSuccess.offset() && $messageSuccess.offset().top - 80 < $(window).scrollTop()) {
                   $("html, body").animate(
                     { scrollTop: $messageSuccess.offset().top - 80 },
                     300
@@ -203,7 +259,7 @@
               }
               $messageError.removeClass("d-none");
               $messageSuccess.addClass("d-none");
-              if ($messageError.offset().top - 80 < $(window).scrollTop()) {
+              if ($messageError.length && $messageError.offset() && $messageError.offset().top - 80 < $(window).scrollTop()) {
                 $("html, body").animate(
                   { scrollTop: $messageError.offset().top - 80 },
                   300

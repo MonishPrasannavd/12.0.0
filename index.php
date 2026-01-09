@@ -66,98 +66,8 @@
 <body>
 
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 100, 'stickyHeaderContainerHeight': 100}">
-			<div class="header-body border-top-0 box-shadow-none">
-				<div class="container-fluid px-3 px-lg-5 p-static">
-					<div class="row align-items-center py-3">
-						<div class="col-6 col-lg-2 col-xxl-3 me-auto me-lg-0">
-							<div class="header-logo" data-clone-element-to="#offCanvasLogo">
-								<a href="index.html">
-									<img alt="Porto" src="img/logos/verticalLogo.svg" data-img-suffix-primary
-										class="img-fluid w-75">
-
-								</a>
-							</div>
-						</div>
-						<div class="col-6 col-lg-10 col-xxl-9 desk-header justify-content-lg-center">
-							<div class="header-nav header-nav-links justify-content-lg-center">
-								<div
-									class="header-nav-main header-nav-main-text-capitalize header-nav-main-arrows header-nav-main-effect-2">
-									<nav class="collapse">
-										<ul class="nav nav-pills" id="mainNav">
-											<li>
-												<a href="index.html" class="nav-link active">
-													Home
-												</a>
-											</li>
-											<li>
-												<a href="demo-accounting-1-process.html" class="nav-link">About Compseqr360</a>
-											</li>
-											<li class="dropdown">
-												<a href="#" class="nav-link dropdown-toggle">Products</a>
-												<ul class="dropdown-menu">
-													<!-- <li><a href="demo-accounting-1-process.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">About
-															Compseqr360
-														</a>
-													</li> -->
-													<li><a href="demo-accounting-1-services-details.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">ProEDox
-															(Document Management System)</a>
-													</li>
-													<li><a href="demo-accounting-1-1CAAN.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">CaaN
-															(Compliance as an Application)</a>
-													</li>
-													<li><a href="caas.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">CaaS
-															(Compliance as a Service)</a></li>
-													<li><a href="caap.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">CaaP
-															(Compliance as a Partner)</a></li>
-													<!-- <li><a href="demo-accounting-1-services-details.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Payroll
-															Management</a></li>
-													<li><a href="demo-accounting-1-services-details.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Global
-															Accounting</a></li>
-													<li><a href="demo-accounting-1-services-details.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Admin
-															Services</a></li> -->
-												</ul>
-											</li>
-											<li>
-												<a class="nav-link" href="demo-accounting-1-about.html">
-													Our Team
-												</a>
-											</li>
-											<li>
-												<a class="nav-link" href="demo-accounting-1-contact.html">
-													Contact
-												</a>
-											</li>
-											<li>
-												<a class="nav-link " href="looking-for-partner.html">
-													Looking for a Partner
-												</a>
-											</li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-						</div>
-						<div class="col-6 col-lg-2 col-xxl-3 d-lg-block">
-							<div class="d-flex justify-content-end align-items-center">
-								<button class="btn header-btn-collapse-nav rounded-pill" data-bs-toggle="offcanvas"
-									href="#offcanvasMain" role="button" aria-controls="offcanvasMain">
-									<i class="fas fa-bars"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+		
+		<?php include "includes/header.php" ?>
 
 
 		<div role="main" class="main px-3 px-lg-5">
@@ -207,7 +117,7 @@
 											</div> -->
 											<div class="appear-animation" data-appear-animation="fadeIn"
 												data-appear-animation-delay="600">
-												<a href="demo-accounting-1-about.html" data-hash data-hash-offset="0"
+												<a href="team.php" data-hash data-hash-offset="0"
 													data-hash-offset-lg="0"
 													class="btn btn-light btn-effect-2 transition-3ms border-0 btn-rounded btn-xl text-3 py-4 btn-with-arrow-solid mt-3">
 													<strong
@@ -294,7 +204,7 @@
 										</div>
 										<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 											data-appear-animation-delay="800">
-											<a href="demo-accounting-1-about.html" data-hash data-hash-offset="0"
+											<a href="team.php" data-hash data-hash-offset="0"
 												data-hash-offset-lg="0"
 												class="btn btn-effect-2 transition-3ms border-0 btn-rounded btn-xl text-3 py-4 btn-with-arrow-solid mt-3"
 												style="background-color:#325A9C !important;">
@@ -540,7 +450,7 @@
 
 							<div class="d-flex flex-column flex-lg-row pt-3 align-items-lg-center">
 								<div class="me-4">
-									<a href="demo-accounting-1-about.html"
+									<a href="team.php"
 										class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium btn-swap-1"
 										data-clone-element="1">
 										<span>Learn More <i
@@ -555,7 +465,7 @@
 								data-appear-animation-delay="800">
 								<div class="d-flex flex-column flex-lg-row pt-3 align-items-lg-center">
 									<div>
-										<a href="demo-accounting-1-about.html"
+										<a href="team.php"
 											class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium btn-swap-1"
 											data-clone-element="1">
 											<span>Learn More <i
@@ -732,14 +642,14 @@
 													class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
 													<span
 														class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
-														<a href="demo-accounting-1-services-details.html" title="">
+														<a href="proedox.php" title="">
 															<img src="img/demos/accounting-1/services/DMS.webp"
 																loading="lazy" class="img-fluid" alt="">
 														</a>
 													</span>
 													<span class="thumb-info-content">
 														<span class="thumb-info-content-inner bg-light p-4">
-															<a href="demo-accounting-1-services-details.html" title="">
+															<a href="proedox.php" title="">
 																<h4 class="text-4 mb-2">DMS (Document Management System)
 																</h4>
 															</a>
@@ -754,10 +664,10 @@
 																reducing paperwork and improving accuracy </p>
 															<span
 																class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
-																<a href="demo-accounting-1-services-details.html"
+																<a href="proedox.php"
 																	class="text-uppercase text-color-secondary text-color-hover-primary font-weight-semibold text-decoration-underline">View
 																	Details</a>
-																<a href="demo-accounting-1-services-details.html"
+																<a href="proedox.php"
 																	class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span
 																		class="p-static bg-transparent transform-none"><i
 																			class="fa-solid fa-arrow-right text-dark"></i></span></a>
@@ -771,14 +681,14 @@
 													class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
 													<span
 														class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
-														<a href="demo-accounting-1-1CAAN.html" title="">
+														<a href="caan.php" title="">
 															<img src="img/demos/accounting-1/services/CaaN.webp"
 																loading="lazy" class="img-fluid" alt="">
 														</a>
 													</span>
 													<span class="thumb-info-content">
 														<span class="thumb-info-content-inner bg-light p-4">
-															<a href="demo-accounting-1-1CAAN.html" title="">
+															<a href="caan.php" title="">
 																<h4 class="text-4 mb-2">CaaN (Compliance as an
 																	Application)
 																</h4>
@@ -793,10 +703,10 @@
 																you focus on scaling your business.</p>
 															<span
 																class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
-																<a href="demo-accounting-1-1CAAN.html"
+																<a href="caan.php"
 																	class="text-uppercase text-color-secondary text-color-hover-primary font-weight-semibold text-decoration-underline">View
 																	Details</a>
-																<a href="demo-accounting-1-1CAAN.html"
+																<a href="caan.php"
 																	class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span
 																		class="p-static bg-transparent transform-none"><i
 																			class="fa-solid fa-arrow-right text-dark"></i></span></a>
@@ -810,14 +720,14 @@
 													class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
 													<span
 														class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
-														<a href="caas.html" title="">
+														<a href="caas.php" title="">
 															<img src="img/demos/accounting-1/services/CaaS.webp"
 																loading="lazy" class="img-fluid" alt="">
 														</a>
 													</span>
 													<span class="thumb-info-content">
 														<span class="thumb-info-content-inner bg-light p-4">
-															<a href="caas.html" title="">
+															<a href="caas.php" title="">
 																<h4 class="text-4 mb-2">CAAS (Compliance as a Service)
 																</h4>
 															</a>
@@ -832,10 +742,10 @@
 																grow.</p>
 															<span
 																class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
-																<a href="caas.html"
+																<a href="caas.php"
 																	class="text-uppercase text-color-secondary text-color-hover-primary font-weight-semibold text-decoration-underline">View
 																	Details</a>
-																<a href="caas.html"
+																<a href="caas.php"
 																	class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span
 																		class="p-static bg-transparent transform-none"><i
 																			class="fa-solid fa-arrow-right text-dark"></i></span></a>
@@ -849,14 +759,14 @@
 													class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
 													<span
 														class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
-														<a href="caap.html" title="">
+														<a href="caap.php" title="">
 															<img src="img/demos/accounting-1/services/CaaP.webp"
 																loading="lazy" class="img-fluid" alt="">
 														</a>
 													</span>
 													<span class="thumb-info-content">
 														<span class="thumb-info-content-inner bg-light p-4">
-															<a href="caap.html" title="">
+															<a href="caap.php" title="">
 																<h4 class="text-4 mb-2">CaaP (Compliance as a Partner)
 																</h4>
 															</a>
@@ -872,10 +782,10 @@
 															</p>
 															<span
 																class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
-																<a href="caap.html"
+																<a href="caap.php"
 																	class="text-uppercase text-color-secondary text-color-hover-primary font-weight-semibold text-decoration-underline">View
 																	Details</a>
-																<a href="caap.html"
+																<a href="caap.php"
 																	class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span
 																		class="p-static bg-transparent transform-none"><i
 																			class="fa-solid fa-arrow-right text-dark"></i></span></a>
@@ -887,7 +797,7 @@
 											<!-- <div class="box-shadow-7 border-radius-2 overflow-hidden">
 												<span class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
 													<span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
-														<a href="demo-accounting-1-services-details.html" title="">
+														<a href="proedox.php" title="">
 															<img src="img/demos/accounting-1/services/service-5.jpg"
 																loading="lazy" class="img-fluid" alt="">
 														</a>
@@ -900,10 +810,10 @@
 																compliance.</p>
 															<span
 																class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
-																<a href="demo-accounting-1-services-details.html"
+																<a href="proedox.php"
 																	class="text-uppercase text-color-secondary text-color-hover-primary font-weight-semibold text-decoration-underline">View
 																	Details</a>
-																<a href="demo-accounting-1-services-details.html"
+																<a href="proedox.php"
 																	class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span
 																		class="p-static bg-transparent transform-none"><i
 																			class="fa-solid fa-arrow-right text-dark"></i></span></a>
@@ -917,7 +827,7 @@
 													class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
 													<span
 														class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content border-radius-0 rounded-top">
-														<a href="demo-accounting-1-services-details.html" title="">
+														<a href="proedox.php" title="">
 															<img src="img/demos/accounting-1/services/service-6.jpg"
 																loading="lazy" class="img-fluid" alt="">
 														</a>
@@ -930,10 +840,10 @@
 																business growth.</p>
 															<span
 																class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
-																<a href="demo-accounting-1-services-details.html"
+																<a href="proedox.php"
 																	class="text-uppercase text-color-secondary text-color-hover-primary font-weight-semibold text-decoration-underline">View
 																	Details</a>
-																<a href="demo-accounting-1-services-details.html"
+																<a href="proedox.php"
 																	class="btn btn-light btn-rounded box-shadow-7 btn-xl border-0 text-3 p-0 btn-with-arrow-solid p-absolute right-0 transform3dx-n100 bottom-7"><span
 																		class="p-static bg-transparent transform-none"><i
 																			class="fa-solid fa-arrow-right text-dark"></i></span></a>
@@ -1049,7 +959,7 @@
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="600">
 								<div class="d-flex pt-3 align-items-center">
-									<a href="demo-accounting-1-contact.html"
+									<a href="contact.php"
 										class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium btn-swap-1"
 										data-clone-element="1">
 										<span>Contact Us <i
@@ -1174,7 +1084,7 @@
 				<div class="bg-quaternary border-radius-2 p-relative overflow-hidden">
 					<div class="container p-relative z-index-1">
 						<div class="row px-3 px-xl-0 align-items-center py-5">
-							<div class="col-lg-8 pb-0 pb-lg-5 pt-5">
+							<div class="col-lg-12 pb-0 pb-lg-5 pt-5">
 								<div class="appear-animation" data-appear-animation="fadeIn"
 									data-appear-animation-delay="0">
 									<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4"><span
@@ -1187,11 +1097,11 @@
 									</h2>
 								</div>
 								<div class="row">
-									<div class="col-lg-5 mb-4 mb-lg-0">
+									<div class="col-lg-6 mb-4 mb-lg-0">
 										<div class="appear-animation" data-appear-animation="blurIn"
 											data-appear-animation-delay="300">
 											<div class="d-flex align-items-center pt-4">
-												<strong class="d-inline-flex text-15 text-dark n-ls-5">42%</strong>
+												<!-- <strong class="d-inline-flex text-15 text-dark n-ls-5">42%</strong> -->
 												<div class="p-2 ps-3">
 													<img src="img/demos/accounting-1/icons/icon-6.svg" width="48" alt=""
 														data-icon
@@ -1200,14 +1110,14 @@
 											</div>
 											<!-- <span class="custom-font-tertiary text-7 text-dark n-ls-1 fst-italic">Lorem
 												ipsum </span> -->
-											<p class="mb-0 pt-2 text-3-5 line-height-7">The main legal and compliance priorities for compliance and privacy leaders in 2024 were strengthening their personal impact on company strategy (42%).</p>
+											<p class="mb-0 pt-2 text-3-5 line-height-7">The main legal and compliance priorities for compliance and privacy leaders in 2024 were strengthening their personal impact on company strategy.</p>
 										</div>
 									</div>
-									<div class="col-lg-5">
+									<div class="col-lg-6">
 										<div class="appear-animation" data-appear-animation="blurIn"
 											data-appear-animation-delay="600">
 											<div class="d-flex align-items-center pt-4">
-												<strong class="d-inline-flex text-15 text-dark n-ls-5">40%</strong>
+												<!-- <strong class="d-inline-flex text-15 text-dark n-ls-5">40%</strong> -->
 												<div class="p-2 ps-3">
 													<img src="img/demos/accounting-1/icons/icon-6.svg" width="48" alt=""
 														data-icon
@@ -1216,18 +1126,18 @@
 											</div>
 											<!-- <span class="custom-font-tertiary text-7 text-dark n-ls-1 fst-italic">Lorem
 												ipsum</span> -->
-											<p class="mb-0 pt-2 text-3-5 line-height-7">Improving third-party risk management (40%), and ensuring compliance programs can keep pace with fast-moving regulatory requirements (39%).</p>
+											<p class="mb-0 pt-2 text-3-5 line-height-7">Improving third-party risk management, and ensuring compliance programs can keep pace with fast-moving regulatory requirements.</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4">
+							<!-- <div class="col-lg-4">
 								<div class="appear-animation" data-appear-animation="fadeIn"
 									data-appear-animation-delay="800">
 									<img src="img/demos/accounting-1/svg/graph.svg" alt="" data-icon
 										data-plugin-options="{'onlySVG': true, 'extraClass': 'w-100 custom-el-4'}" />
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<!-- <div class="bg-secondary rounded-bottom p-relative overflow-hidden">
@@ -1242,13 +1152,13 @@
 												Further:</span>
 										</div>
 										<div class="me-3 ps-3 p-relative bottom-1 pt-3 pt-lg-0">
-											<a href="demo-accounting-1-process.html"
+											<a href="about_compseqr360.php"
 												class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Learn
 												About Our Process <i class="fas fa-arrow-right ms-2"></i></a>
 										</div>
 										<div
 											class="py-3 py-lg-0 p-relative bottom-1 border-start border-color-light-rgba-20">
-											<a href="demo-accounting-1-contact.html"
+											<a href="contact.php"
 												class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Get
 												Free Consultation <i class="fas fa-arrow-right ms-2"></i></a>
 										</div>
@@ -1327,7 +1237,7 @@
 									<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 										data-appear-animation-delay="800">
 										<div class="d-flex pt-4 align-items-center">
-											<a href="demo-accounting-1-contact.html"
+											<a href="contact.php"
 												class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium btn-swap-1"
 												data-clone-element="1">
 												<span>Become a Client <i
@@ -1504,89 +1414,7 @@
 						</div>
 						<div class="col-lg-6 p-relative">
 
-							<form class="contact-form" id="contact-form">
-								<div class="row">
-									<div class="form-group col-lg-6">
-										<label
-											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Your
-											Name *</label>
-										<input type="text" value="" placeholder="Enter your name"
-											data-msg-required="Please enter your name." maxlength="100"
-											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="from_name" required>
-									</div>
-									<div class="form-group col-lg-6">
-										<label
-											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Email
-											Address</label>
-										<input type="email" value="" placeholder="Enter your e-mail address"
-											data-msg-required="Please enter your email address."
-											data-msg-email="Please enter a valid email address." maxlength="100"
-											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="email" required>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col-lg-6">
-										<label
-											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Phone
-											Number</label>
-										<input type="tel" value="" placeholder="Enter your phone number"
-											data-msg-required="Please enter your Mobile Number." maxlength="10"
-											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="mobilenumber" required>
-									</div>
-									<div class="form-group col-lg-6">
-										<label
-											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Company
-											Name</label>
-										<input type="text" value="" placeholder="Enter your company name"
-											data-msg-required="Please enter your company name."
-											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="company" required>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col-lg-6">
-										<label
-											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Industry</label>
-										<input type="text" value="" placeholder="Enter your industry name"
-											data-msg-required="Please enter your industry name."
-											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="industry" required>
-									</div>
-									<div class="form-group col-lg-6">
-										<label
-											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Annual
-											Revenue</label>
-										<input type="text" value="" placeholder="Enter your annual revenue"
-											data-msg-required="Please enter your annual revenue."
-											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="revenue" required>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col">
-										<label
-											class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Additional
-											Information</label>
-										<textarea maxlength="5000"
-											placeholder="Enter Additional Information or Questions" rows="8"
-											class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-											name="message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col">
-										<button type="submit"
-											class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium btn-swap-1"
-											data-clone-element="1" id="submit-btn">
-											<span>Submit <i
-													class="fa-solid fa-arrow-right ms-2 p-relative left-10"></i></span>
-										</button>
-									</div>
-								</div>
-							</form>
+							<?php include "includes/get_in_touch.php" ?>
 
 						</div>
 					</div>
@@ -1755,250 +1583,15 @@
 
 		</div>
 		
-    <footer class="footer pt-0 text-3">
-      <div class="container pb-lg-4 pt-5">
-        <div class="row pt-3 justify-content-between">
-          <div class="col-lg-6">
-            <a href="index.html">
-              <img
-                alt=""
-                src="img/logos/verticalLogo.svg"
-                data-img-suffix-primary
-                class="img-fluid"
-                width="260"
-              />
-            </a>
-
-            <p class="text-2 text-color-grey mt-3">
-              COMPSEQR360 redefines compliance management with an intuitive,
-              SaaS-based platform designed for businesses of all sizes. Our
-              expertise ensures seamless navigation of regulatory challenges,
-              offering real-time insights into governance, risk, and compliance.
-              With secure data handling, ERP integration, and cutting-edge
-              tools, we simplify external and internal compliance. Empower your
-              business to stay ahead of regulations with our innovative,
-              global-ready solutions. COMPSEQR360 isn’t just about
-              compliance—it’s about building trust and ensuring growth.
-            </p>
-
-            <!-- <ul class="social-icons social-icons-clean social-icons-medium">
-                        <li class="social-icons-instagram">
-                            <a href="http://www.instagram.com/" target="_blank" title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="social-icons-x">
-                            <a href="http://www.x.com/" target="_blank" title="X">
-                                <i class="fab fa-x-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="social-icons-facebook">
-                            <a href="http://www.facebook.com/" target="_blank" title="Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                    </ul> -->
-          </div>
-
-          <div class="col-sm-6 col-lg-2 pt-4 pt-lg-0">
-            <h4 class="text-color-dark font-weight-bold mb-3">Pages</h4>
-            <ul class="list list-unstyled">
-              <li>
-                <a
-                  href="index.html"
-                  class="text-color-grey text-color-hover-primary"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="demo-accounting-1-process.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >About Compseqr360</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-color-grey text-color-hover-primary"
-                  href="demo-accounting-1-about.html"
-                >
-                  Our Team
-                </a>
-              </li>
-              <!-- <li>
-                            <a class="text-color-grey text-color-hover-primary"
-                                href="demo-accounting-1-process.html">
-                                Process
-                            </a>
-                        </li> -->
-              <!-- <li>
-                            <a class="text-color-grey text-color-hover-primary"
-                                href="demo-accounting-1-projects.html">
-                                Projects
-                            </a>
-                        </li> -->
-              <li>
-                <a
-                  class="text-color-grey text-color-hover-primary"
-                  target="_blank"
-                  href="demo-accounting-1-news.html"
-                >
-                  News
-                </a>
-              </li>
-              <li>
-                <a
-                  class="text-color-grey text-color-hover-primary"
-                  href="demo-accounting-1-contact.html"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-lg-4 pt-4 pt-lg-0">
-            <h4 class="text-color-dark font-weight-bold mb-3">Products</h4>
-            <ul class="list list-unstyled">
-              <!-- <li>
-                <a
-                  href="demo-accounting-1-process.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >About Compseqr360
-                </a>
-              </li> -->
-              <li>
-                <a
-                  href="demo-accounting-1-services-details.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >⁠ProEDox (Document Management System)</a
-                >
-              </li>
-              <li>
-                <a
-                  href="demo-accounting-1-1CAAN.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >CaaN (Compliance As An Application)</a
-                >
-              </li>
-              <li>
-                <a
-                  href="caas.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >CAAS (Compliance As An Service)</a
-                >
-              </li>
-              <li>
-                <a
-                  href="caap.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >CaaP (Compliance As an Platform)</a
-                >
-              </li>
-              <!-- <li><a href="demo-accounting-1-services-details.html" class="text-color-grey text-color-hover-primary">Global Accounting</a></li>
-                        <li><a href="demo-accounting-1-services-details.html" class="text-color-grey text-color-hover-primary">Admin Services</a></li> -->
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-8">
-              <div class="d-flex align-items-center pt-2 pb-4">
-                <p class="d-inline-block mb-0 font-weight-bold line-height-1">
-                  <mark
-                    class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-8 mark-height-30 n-ls-5 p-0"
-                    >50+
-                  </mark>
-                </p>
-                <span
-                  class="custom-font-tertiary text-5 text-dark n-ls-1 fst-italic ps-2"
-                  >Man Years of Experience</span
-                >
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="feature-box feature-box-secondary align-items-center">
-                <div
-                  class="feature-box-icon feature-box-icon-lg p-static box-shadow-7"
-                >
-                  <img
-                    src="img/icons/email.svg"
-                    width="30"
-                    height="30"
-                    alt=""
-                    data-icon
-                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}"
-                  />
-                </div>
-                <div class="feature-box-info ps-2">
-                  <strong
-                    class="d-block text-uppercase text-color-secondary p-relative top-2"
-                    >Send E-mail</strong
-                  >
-                  <a
-                    href="mailto:info@compseqr.com"
-                    class="text-decoration-none font-secondary text-5 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap p-relative bottom-2"
-                    ><span
-                      class="__cf_email__"
-                      data-cfemail="156c7a6055717a78747c7b3b767a78"
-                      >info@compseqr.com
-                    </span></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-3 pt-4 pt-lg-0">
-                    <h4 class="text-color-dark font-weight-bold mb-3">Newsletter</h4>
-                    <p class="text-3-5 text-color-grey">Want to receive news and updates? Enter your email.</p>
-                    <div class="alert alert-success d-none" id="newsletterSuccess">
-                        <strong>Success!</strong> You've been added to our email list.
-                    </div>
-                    <div class="alert alert-danger d-none" id="newsletterError"></div>
-                    <form id="newsletterForm"
-                        action="https://www.okler.net/previews/porto/12.0.0/php/newsletter-subscribe.php"
-                        method="POST" class="mb-0">
-                        <div class="row">
-                            <div class="form-group col">
-                                <div class="position-relative">
-                                    <i
-                                        class="icons icon-envelope text-color-grey bg-light text-3-5 position-absolute right-15 top-50pct transform3dy-n50"></i>
-                                    <input type="email" value="" placeholder="Enter your e-mail"
-                                        class="form-control form-control-icon text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-                                        name="newsletterEmail" id="newsletterEmail">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col">
-                                <button type="submit"
-                                    class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium px-3 py-2 text-2-5 btn-swap-1"
-                                    data-clone-element="1">
-                                    <span>Submit <i class="fa-solid fa-arrow-right ms-2"></i></span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div> -->
-        </div>
-      </div>
-    </footer>
-		<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasMain"
-			aria-labelledby="offcanvasMain">
-			<div class="offcanvas-header">
-				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-			</div>
-			<div class="offcanvas-body">
-				<div class="mb-4" id="offCanvasLogo"></div>
-				<nav class="offcanvas-nav w-100" id="offCanvasNav"></nav>
-			</div>
-		</div>
+		<?php include "includes/footer.php" ?>
 
 
 
 
 		<!-- Button trigger modal -->
-		<a class="demos-redirect" data-bs-toggle="modal" data-bs-animation="false" data-bs-target="#exampleModal"
+		<!-- <a class="demos-redirect" data-bs-toggle="modal" data-bs-animation="false" data-bs-target="#exampleModal"
 			data-bs-placement="right" title="Demos"><img alt="Demos" src="img/icons/globe.png" class="img-fluid" />
-		</a>
+		</a> -->
 
 		<!-- Modal -->
 
@@ -2023,49 +1616,49 @@
 		<script src="js/views/view.contact.js"></script>
 		<script src="js/coustom.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-		<script>
-			emailjs.init('l15-GfCBL9ZKOOSls');  // Initialize EmailJS with your user ID
+		<!-- <script>
+			emailjs.init('l15-GfCBL9ZKOOSls'); 
 
-			// Handle form submission
+			
 			document.getElementById('contact-form').addEventListener('submit', function (event) {
-				event.preventDefault(); // Prevent the default form submission
+				event.preventDefault(); 
 
 				const form = this;
 				const submitBtn = document.getElementById('submit-btn');
 
-				// Manually check if the form is valid
+				
 				if (form.checkValidity() === false) {
-					// If the form is invalid, show a message and stop submission
+					
 					alert("Please fill in all the required fields.");
 					return;
 				}
 
-				submitBtn.innerText = 'Sending...'; // Change button text during submission
-				submitBtn.disabled = true; // Disable the button to prevent multiple submissions
+				submitBtn.innerText = 'Sending...'; 
+				submitBtn.disabled = true; 
 
-				const serviceID = 'default_service'; // Replace with your service ID
-				const templateID = 'template_l9u4p7i'; // Replace with your template ID
+				const serviceID = 'default_service'; 
+				const templateID = 'template_l9u4p7i'; 
 
 				// Send form data to EmailJS
 				emailjs.sendForm(serviceID, templateID, form)
 					.then(() => {
-						submitBtn.innerText = 'Send Message'; // Reset button text on success
-						submitBtn.disabled = false; // Enable the button again
+						submitBtn.innerText = 'Send Message'; 
+						submitBtn.disabled = false; 
 						alert('Message sent successfully!');
 
-						// Reset the form after success
+						
 						setTimeout(() => {
-							form.reset(); // Reset the form fields
-						}, 500); // Small delay to allow user to see the success alert
+							form.reset(); 
+						}, 500); 
 					})
 					.catch((err) => {
-						submitBtn.innerText = 'Send Message'; // Reset button text on error
-						submitBtn.disabled = false; // Enable the button in case of error
+						submitBtn.innerText = 'Send Message'; 
+						submitBtn.disabled = false; 
 						alert('Failed to send message. Please try again.');
 						console.error('Error:', err);
 					});
 			});
-		</script>
+		</script> -->
 
 
 

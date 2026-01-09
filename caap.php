@@ -67,104 +67,13 @@
 <body>
 
 	<div class="body">
-		<header id="header" data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': false, 'stickyStartAt': 100, 'stickyHeaderContainerHeight': 100}">
-			<div class="header-body border-top-0 box-shadow-none">
-				<div class="container-fluid px-3 px-lg-5 p-static">
-					<div class="row align-items-center py-3">
-						<div class="col-6 col-lg-2 col-xxl-3 me-auto me-lg-0">
-							<div class="header-logo" data-clone-element-to="#offCanvasLogo">
-								<a href="index.html">
-									<img alt="Porto" src="img/logos/verticalLogo.svg" data-img-suffix-primary
-										class="img-fluid w-75">
-
-								</a>
-							</div>
-						</div>
-						<div class="col-6 col-lg-10 col-xxl-9 desk-header justify-content-lg-center">
-							<div class="header-nav header-nav-links justify-content-lg-center">
-								<div
-									class="header-nav-main header-nav-main-text-capitalize header-nav-main-arrows header-nav-main-effect-2">
-									<nav class="collapse">
-										<ul class="nav nav-pills" id="mainNav">
-											<li>
-												<a href="index.html" class="nav-link">
-													Home
-												</a>
-											</li>
-											<li>
-												<a href="demo-accounting-1-process.html" class="nav-link">About Compseqr360</a>
-											</li>
-											<li class="dropdown">
-												<a href="#" class="nav-link dropdown-toggle active">Products</a>
-												<ul class="dropdown-menu">
-													<!-- <li><a href="demo-accounting-1-process.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">About
-															Compseqr360
-														</a>
-													</li> -->
-													<li><a href="demo-accounting-1-services-details.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">ProEDox
-															(Document Management System)</a>
-													</li>
-													<li><a href="demo-accounting-1-1CAAN.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">CaaN
-															(Compliance as an Application)</a>
-													</li>
-													<li><a href="caas.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">CaaS
-															(Compliance as a Service)</a></li>
-													<li><a href="caap.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">CaaP
-															(Compliance as a Partner)</a></li>
-													<!-- <li><a href="demo-accounting-1-services-details.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Payroll
-															Management</a></li>
-													<li><a href="demo-accounting-1-services-details.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Global
-															Accounting</a></li>
-													<li><a href="demo-accounting-1-services-details.html"
-															class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Admin
-															Services</a></li> -->
-												</ul>
-											</li>
-											<li>
-												<a class="nav-link" href="demo-accounting-1-about.html">
-													Our Team
-												</a>
-											</li>
-											<li>
-												<a class="nav-link" href="demo-accounting-1-contact.html">
-													Contact
-												</a>
-											</li>
-											<li>
-												<a class="nav-link" href="looking-for-partner.html">
-													Looking for a Partner
-												</a>
-											</li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-						</div>
-						<div class="col-6 col-lg-2 col-xxl-3 d-lg-block">
-							<div class="d-flex justify-content-end align-items-center">
-								<button class="btn header-btn-collapse-nav rounded-pill" data-bs-toggle="offcanvas"
-									href="#offcanvasMain" role="button" aria-controls="offcanvasMain">
-									<i class="fas fa-bars"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+		<?php include "includes/header.php" ?>
 
 		<div role="main" class="main px-3 px-lg-5">
 
 			<div class="page-header py-0 bg-tertiary px-3 px-xl-0 border-radius-2 p-relative mb-0 overflow-hidden bg-size-cover bg-position-center"
-				style="background-image: url(img/product-banner.png);">
-
+			style="background-image: url(img/product-banner.png);">
+				
 				<div class="container p-relative z-index-1 py-2">
 					<div class="row align-items-center py-4">
 						<div class="col-8 col-md-7">
@@ -176,27 +85,19 @@
 							</div>
 							<div class="appear-animation" data-appear-animation="fadeIn"
 								data-appear-animation-delay="200">
-								<h1 class="text-dark text-9 text-lg-12 font-weight-semibold line-height-1 mb-2">CaaS
-									(Compliance as a Service)</h1>
+								<h1 class="text-dark text-9 text-lg-12 font-weight-semibold line-height-1 mb-2">CaaP (Compliance as a Partner)</h1>
 							</div>
 							<div class="appear-animation" data-appear-animation="fadeIn"
 								data-appear-animation-delay="200">
 								<ul class="breadcrumb d-flex text-3-5 font-weight-semi-bold pb-2 mb-3">
-									<li><a href="index.html" class="text-dark text-decoration-none">Home</a>
+									<li><a href="index.php" class="text-dark text-decoration-none">Home</a>
 									</li>
 									<li class="active">Services</li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-4 col-md-5 p-relative">
-							<!-- <div class="opacity-2 p-absolute w-100 rotate-r-50 custom-pos-5 d-none d-lg-block">
-								<img src="img/icons/abstract-bg-1.svg" alt="" data-icon
-									data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary w-100'}" />
-							</div> -->
-							<!-- <div class="custom-mask-img custom-mask-img-4 custom-el-6">
-								<img src="img/demos/accounting-1/generic/generic-11.jpg" loading="lazy"
-									class="img-fluid" alt="" />
-							</div> -->
+							
 						</div>
 					</div>
 				</div>
@@ -210,14 +111,14 @@
 								<h4 class="text-5 font-weight-semibold line-height-1 mb-4">Our Services</h4>
 
 								<ul class="nav nav-list nav-list-arrows flex-column mb-0">
-									<li class="nav-item"><a href="demo-accounting-1-services-details.html"
+									<li class="nav-item"><a href="proedox.php"
 											class="nav-link  text-dark">DMS (Document Management System)</a></li>
-									<li class="nav-item"><a href="demo-accounting-1-1CAAN.html" class="nav-link ">CaaN
+									<li class="nav-item"><a href="caan.php" class="nav-link ">CaaN
 											(Compliance as an Application)</a></li>
-									<li class="nav-item"><a href="CaaS.html" class="nav-link active">CaaS (Compliance As
-											An
+									<li class="nav-item"><a href="caas.php" class="nav-link ">CaaS (Compliance As An
 											Service)</a></li>
-									<li class="nav-item"><a href="caap.html" class="nav-link ">CaaP (Compliance As an
+									<li class="nav-item"><a href="caap.php " class="nav-link active">CaaP (Compliance
+											As an
 											Partner)</a></li>
 
 								</ul>
@@ -226,37 +127,95 @@
 						</div>
 
 						<div class="bg-tertiary text-light p-4 border-radius-2 mb-4">
-							<div class="m-3">
-								<!-- <h4 class="text-5 font-weight-semibold line-height-1 mb-4 text-light">Our Specialist
-								</h4> -->
-
-								<div class="border-radius-2 overflow-hidden">
-									<span class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
-										<!-- <span class="thumb-info-wrapper border-radius-0 rounded-top">
-											<img src="img/demos/accounting-1/team/team-3.jpg" loading="lazy"
-												class="img-fluid" alt="">
-										</span> -->
-										<span class="thumb-info-content">
-											<div class="bg-light p-3">
-												<p class="line-height-7 text-3 mb-0" style="color: #DE5926;">76% of
-													compliance managers say they manually scan regulatory websites to
-													track changes and assess the impact on their organization.</p>
+							<div class="owl-carousel single-slide-carousel carousel-half-full-width-right nav-bottom nav-bottom-align-left nav-lg nav-transparent nav-borders-light nav-arrow-light rounded-nav mb-2"
+								data-plugin-options="{'responsive': {'0': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'loop': true, 'nav': false, 'dots': false, 'margin': 0, 'autoplay': true, 'autoplayTimeout': 7000,'smartSpeed': 3000}">
+								<div class="border-radius-2 px-1 py-3 overflow-hidden">
+									<div class="feature-box appear-animation" data-appear-animation="fadeInUpShorter"
+										data-appear-animation-delay="0">
+										<div class="feature-box-info border-radius-2 p-3 w-100">
+											<div class="bg-light p-3 border-radius-2">
+												<p class="mb-0 pt-1 line-height-6" style="color: #DE5926;">Almost two-thirds (65%) of corporate risk and compliance professionals said using technology to streamline and automate manual processes would help reduce the complexity and cost of risk and compliance. </p>
 												<div class="d-flex pt-3align-items-center">
-													<a href="https://www.metricstream.com/insights/state-of-compliance-survey-report-2021.htm"
-														class="btn btn-rounded box-shadow-7 mt-2 font-weight-medium "
-														target="_blank"
-														style="background-color: #DE5926; color: #FFFFFF;">
-														<span><b style="color:#325A9C;">Source:</b> MetricStream State
-															of Compliance Survey Report 2021 </span>
+													<a href="https://www.thomsonreuters.com/en-us/posts/investigation-fraud-and-risk/risk-compliance-survey-report-2023/"
+														class="btn btn-rounded btn-white box-shadow-7 mt-2 font-weight-medium " target="_blank" style="background-color: #DE5926; color: #FFFFFF;">
+														<span><b style="color:#325A9C;">Source:</b> 2023 Thomson Reuters Risk & Compliance Survey Report </span>
 													</a>
 												</div>
 											</div>
+										</div>
+									</div>
+								</div>
+								<div class="border-radius-2 px-1 py-3 overflow-hidden">
+									<div class="feature-box appear-animation" data-appear-animation="fadeInUpShorter"
+										data-appear-animation-delay="300">
+										<div class="feature-box-info border-radius-2 p-3 w-100">
+											<div class="bg-light p-3 border-radius-2">
+												<p class="mb-0 pt-1 line-height-6" style="color: #DE5926;">19% of risk and compliance professionals indicated they are adopting new automation and technology solutions to reduce costs.  </p>
+												<div class="d-flex pt-3 justify-content-center align-items-center">
+													<a href="https://cdn.navex.com/image/upload/v1718650503/resources-2024/benchmarking-reports/2024-risk_compliance-report_EN.pdf?_gl=1*111mrp3*_gcl_au*MzM5MDEwOTMzLjE3Mjk4Njk0OTY.*_ga*NjY0NjM4MDY0LjE3Mjk4Njk0OTY.*_ga_JRYF9MG532*MTcyOTg2OTQ5NS4xLjEuMTcyOTg2OTUwMy41Mi4wLjA."
+														class="btn btn-rounded btn-white box-shadow-7 font-weight-medium" target="_blank" style="background-color: #DE5926; color: #FFFFFF;">
+														<span><b style="color:#325A9C;">Source:</b> Navex's 2024 State of Risk & Compliance Report</span>
+													</a>
+												</div>
+											</div>								
+											
+										</div>
+										
+									</div>
+								</div>
+								
+								
+							</div>
+							<div class="d-flex pt-3 justify-content-center align-items-center">
+								<a href="team.php"
+									class="btn btn-rounded btn-white box-shadow-7 font-weight-medium ">
+									<span>About COMPSEQR360 <i
+											class="fa-solid fa-arrow-right ms-2 p-relative left-10"></i></span>
+								</a>
+							</div>
+							<!-- <div class="m-3">
+								<h4 class="text-5 font-weight-semibold line-height-1 mb-4 text-light">Our Specialist
+								</h4>
+
+								<div class="border-radius-2 overflow-hidden">
+									<span class="thumb-info thumb-info-no-overlay thumb-info-show-hidden-content-hover">
+										<span class="thumb-info-wrapper border-radius-0 rounded-top">
+											<img src="img/demos/accounting-1/team/team-3.jpg" loading="lazy"
+												class="img-fluid" alt="">
+										</span>
+										<span class="thumb-info-content">
+											<span class="thumb-info-content-inner bg-light p-4">
+												<h4 class="text-5 mb-1">Laura Mitchell</h4>
+												<p class="line-height-7 text-3 mb-0">CEO &amp; Founder</p>
+												<span
+													class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
+													<ul class="social-icons social-icons-clean social-icons-medium">
+														<li class="social-icons-instagram">
+															<a href="http://www.instagram.com/" target="_blank"
+																title="Instagram">
+																<i class="fab fa-instagram"></i>
+															</a>
+														</li>
+														<li class="social-icons-x">
+															<a href="http://www.x.com/" target="_blank" title="X">
+																<i class="fab fa-x-twitter"></i>
+															</a>
+														</li>
+														<li class="social-icons-facebook">
+															<a href="http://www.facebook.com/" target="_blank"
+																title="Facebook">
+																<i class="fab fa-facebook-f"></i>
+															</a>
+														</li>
+													</ul>
+												</span>
+											</span>
 										</span>
 									</span>
 								</div>
 
 								<div class="d-flex flex-column pt-4">
-									<!-- <div class="pe-4">
+									<div class="pe-4">
                                             <div class="feature-box feature-box-secondary align-items-center">
                                                 <div class="feature-box-icon feature-box-icon-lg p-static box-shadow-7">
                                                     <img src="img/icons/phone-2.svg" width="30" height="30" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
@@ -266,15 +225,15 @@
                                                     <a href="tel:1234567890" class="text-decoration-none font-secondary text-5 font-weight-semibold text-color-light text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap p-relative bottom-2">1234567890</a>
                                                 </div>
                                             </div>
-                                        </div> -->
-									<div class="d-flex pt-3 justify-content-center align-items-center">
-										<a href="demo-accounting-1-about.html"
+                                        </div>
+									<div class="d-flex pt-3 align-items-center">
+										<a href="team.php"
 											class="btn btn-rounded btn-white box-shadow-7 font-weight-medium ">
 											<span>About COMPSEQR360 <i
 													class="fa-solid fa-arrow-right ms-2 p-relative left-10"></i></span>
 										</a>
 									</div>
-									<!-- <div class="pe-4 pt-4">
+									<div class="pe-4 pt-4">
 										<div class="feature-box feature-box-secondary align-items-center">
 											<div class="feature-box-icon feature-box-icon-lg p-static box-shadow-7"
 												style="background-color: #fff !important;">
@@ -292,9 +251,9 @@
 												</p>
 											</div>
 										</div>
-									</div> -->
+									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 
@@ -303,38 +262,36 @@
 
 						<div class="row mt-5">
 							<div class="col-lg-12 mb-4 mb-lg-0 pe-lg-5">
-								<h2 class="text-7 font-weight-semibold line-height-1 mb-4">CaaS – Compliance as a
-									Service</h2>
-								<p>CaaS (Compliance As A Service) offers a comprehensive solution for businesses seeking
-									expert assistance in navigating complex compliance landscapes. Backed by the
-									professional services team at CompSeqr, CaaS ensures that your secretarial, legal,
-									risk, and compliance tasks are handled efficiently and effectively. Whether you need
-									ongoing support, one-time assistance, or help with specialized tasks, CaaS provides
-									the expertise and resources to meet your needs.</p>
+								<h2 class="text-7 font-weight-semibold line-height-1 mb-4">CaaP – Compliance as a
+									Partner</h2>
+								<p>CaaP (Compliance As A Partner) redefines the relationship between businesses and
+									compliance service providers by fostering a collaborative, solution-oriented
+									approach. With CaaP, CompSeqr becomes more than just a service provider—we become
+									your strategic partner, working alongside your teams to understand challenges,
+									implement tailored solutions, and ensure seamless compliance management.</p>
 
-								<h4>Key Features of CaaS:</h4>
+								<h4>Key Features of CaaP:</h4>
 								<ol class="keyli">
-									<li><span>Expert Support Across Compliance Areas:</span> From completing filings and
-										obtaining registrations to representing your organization in litigations and
-										conducting compliance audits, CaaP supports your teams in every aspect of
-										compliance management. Our in-house experts and growing network of SME partners
-										deliver industry-specific insights and services tailored to your requirements.
+									<li><span>Access to CompSeqr360 for Proactive Compliance Management:</span> Gain
+										full access to CompSeqr360, an advanced compliance management platform that
+										eliminates the inefficiencies of traditional tracking methods. Monitor
+										compliance statuses in real-time, manage documents effectively, and ensure
+										regulatory adherence across all levels of your organization.</li>
+									<li><span>End-to-End Implementation of CompSeqr360:</span> Our team handles the
+										comprehensive implementation of CompSeqr360, ensuring smooth integration with
+										your existing processes. From setup to training, we ensure your teams are
+										equipped to make the most of the platform.</li>
+									<li><span>Retainership Services for Ongoing Compliance Support:</span> For
+										businesses requiring regular support, CaaP offers retainership services to
+										manage compliance activities seamlessly. Our experts work hand-in-hand with your
+										teams to ensure compliance requirements are met consistently and efficiently.
 									</li>
-									<li><span>Access to CompSeqr360:</span> With CaaS, you gain full access to
-										CompSeqr360, an advanced compliance management platform that addresses the
-										challenges of traditional compliance tracking. This enables centralized tracking
-										and management of all compliance activities.</li>
-									<li><span>End-to-End Implementation of CompSeqr360:</span> Our team ensures the
-										seamless implementation of the CompSeqr360 platform, setting up processes, user
-										roles, and systems to help your organization hit the ground running.</li>
-									<li><span>Retainership Services for Ongoing Compliance Management:</span> For
-										businesses requiring consistent support, CaaS offers retainership services,
-										allowing you to rely on our team to handle compliance tasks on a regular basis.
+									<li><span>Customized Solutions for Your Compliance Challenges:</span> As your
+										partner, CaaP goes beyond standard services. We collaborate with your team to
+										identify specific compliance pain points and develop tailored automation and
+										customizations to optimize your compliance platform according to your unique
+										needs.
 									</li>
-									<li><span>Adhoc Services on Demand:</span> Need support for a specific activity or
-										event? CaaS’s flexible framework allows businesses to request and receive
-										services on an as-needed basis, ensuring timely and efficient resolution of
-										compliance challenges.</li>
 								</ol>
 							</div>
 
@@ -346,12 +303,12 @@
 						<!-- Why Choose Us -->
 						<div class="row align-items-center mt-3 py-5">
 							<div class="col">
-								<h2 class="text-7 font-weight-semibold line-height-1 mb-4">Why Choose CaaS?</h2>
-								<p>CaaS combines the power of technology and human expertise to provide a one-stop
-									solution for your compliance needs. With access to CompSeqr360, a proven track
-									record in managing complex compliance tasks, and a network of SME partners, CaaS
-									ensures your business remains compliant while reducing the burden on your internal
-									teams.</p>
+								<h2 class="text-7 font-weight-semibold line-height-1 mb-4">Why Choose CaaP?</h2>
+								<p>CaaP stands out by putting partnership at the forefront of compliance management. By
+									combining access to CompSeqr360’s cutting-edge technology with personalized support
+									and custom automation, CaaP ensures your organization is not just compliant but
+									thriving in a regulatory environment. Choose CaaP to build a compliance ecosystem
+									that evolves with your business and delivers results you can rely on.</p>
 
 								<!-- <div class="accordion accordion-modern-status accordion-modern-status-arrow accordion-modern-status-arrow-dark"
 									id="accordionWhyChooseUs">
@@ -493,27 +450,31 @@
 
 								<div class="toggle toggle-minimal toggle-faqs toggle-dark m-0" data-plugin-toggle>
 									<section class="toggle">
-										<a class="toggle-title text-4 text-dark">1. What is provided in CaaS?</a>
+										<a class="toggle-title text-4 text-dark">1.	What is provided in CaaP?</a>
 										<div class="toggle-content">
-											<p class="mb-0">CaaS will have (i) CompSeqr360 licenses (ii) Services to
-												manage your compliances</p>
+											<p class="mb-0">CaaP will have (i) CompSeqr360 licenses (ii) Services to manage your compliances (“Professional Services”) (iii) Services to do any customisations to the application specific to Client (“IT Services”).</p>
 										</div>
 									</section>
 									<section class="toggle">
-										<a class="toggle-title text-4 text-dark">2. What kind of services are provided
-											in CaaS?</a>
+										<a class="toggle-title text-4 text-dark">2.	What kind of IT Services are provided in CaaP?</a>
 										<div class="toggle-content">
-											<p class="mb-0">Kind of services provided in CaaS will vary from Client to
-												Client. There is limited scope of services that will be provided as part
-												of CaaS.</p>
+											<p class="mb-0">Nature of IT Services will depend on needs of Client and are not predetermined services. Any kind of IT services required by Client for make CS360 more robust and complete from them.</p>
 										</div>
 									</section>
-									<section class="toggle">
-										<a class="toggle-title text-4 text-dark">3. Can the scope of services in CaaS be
-											modified?</a>
+									<!-- <section class="toggle">
+										<a class="toggle-title text-4 text-dark">Lorem ipsum dolor sit, amet
+											consectetur?</a>
 										<div class="toggle-content">
-											<p class="mb-0">Yes, it can be modified anytime. There is no fixed scope of
-												services in CaaS and is agreed with the Client from time to time.</p>
+											<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Rerum eius, ipsam consequatur at, dicta quis ut libero ipsa, vero
+												asperiores fugiat doloribus maxime sed itaque harum unde! Cupiditate,
+												beatae iste.</p>
+										</div>
+									</section> -->
+									<section class="toggle">
+										<a class="toggle-title text-4 text-dark">3.	What if the changes made are generic changes and are not specific changes?</a>
+										<div class="toggle-content">
+											<p class="mb-0">Any of the IT services which are common for clients at large will not be considered as part of the effort / scope of IT services.</p>
 										</div>
 									</section>
 								</div>
@@ -534,10 +495,10 @@
                                         <span class="d-inline-block text-3 py-4 px-5 text-uppercase font-weight-medium custom-bg-gradient-1 w-100 rounded-pill">Explore Further:</span>
                                     </div>
                                     <div class="me-3 ps-3 p-relative bottom-1 pt-3 pt-lg-0">
-                                        <a href="demo-accounting-1-process.html" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Learn About Our Process <i class="fas fa-arrow-right ms-2"></i></a>
+                                        <a href="about_compseqr360.php" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Learn About Our Process <i class="fas fa-arrow-right ms-2"></i></a>
                                     </div>
                                     <div class="py-3 py-lg-0 p-relative bottom-1 border-start border-color-light-rgba-20">
-                                        <a href="demo-accounting-1-contact.html" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Get Free Consultation <i class="fas fa-arrow-right ms-2"></i></a>
+                                        <a href="contact.php" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2 py-lg-0">Get Free Consultation <i class="fas fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -547,235 +508,11 @@
 
 		</div>
 
-
 	</div>
 	
-    <footer class="footer pt-0 text-3">
-      <div class="container pb-lg-4 pt-5">
-        <div class="row pt-3 justify-content-between">
-          <div class="col-lg-6">
-            <a href="index.html">
-              <img
-                alt=""
-                src="img/logos/verticalLogo.svg"
-                data-img-suffix-primary
-                class="img-fluid"
-                width="260"
-              />
-            </a>
+   <?php include "includes/footer.php" ?>
 
-            <p class="text-2 text-color-grey mt-3">
-              COMPSEQR360 redefines compliance management with an intuitive,
-              SaaS-based platform designed for businesses of all sizes. Our
-              expertise ensures seamless navigation of regulatory challenges,
-              offering real-time insights into governance, risk, and compliance.
-              With secure data handling, ERP integration, and cutting-edge
-              tools, we simplify external and internal compliance. Empower your
-              business to stay ahead of regulations with our innovative,
-              global-ready solutions. COMPSEQR360 isn’t just about
-              compliance—it’s about building trust and ensuring growth.
-            </p>
 
-            <!-- <ul class="social-icons social-icons-clean social-icons-medium">
-                        <li class="social-icons-instagram">
-                            <a href="http://www.instagram.com/" target="_blank" title="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="social-icons-x">
-                            <a href="http://www.x.com/" target="_blank" title="X">
-                                <i class="fab fa-x-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="social-icons-facebook">
-                            <a href="http://www.facebook.com/" target="_blank" title="Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                    </ul> -->
-          </div>
-
-          <div class="col-sm-6 col-lg-2 pt-4 pt-lg-0">
-            <h4 class="text-color-dark font-weight-bold mb-3">Pages</h4>
-            <ul class="list list-unstyled">
-              <li>
-                <a
-                  href="index.html"
-                  class="text-color-grey text-color-hover-primary"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="demo-accounting-1-process.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >About Compseqr360</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-color-grey text-color-hover-primary"
-                  href="demo-accounting-1-about.html"
-                >
-                  Our Team
-                </a>
-              </li>
-              <!-- <li>
-                            <a class="text-color-grey text-color-hover-primary"
-                                href="demo-accounting-1-process.html">
-                                Process
-                            </a>
-                        </li> -->
-              <!-- <li>
-                            <a class="text-color-grey text-color-hover-primary"
-                                href="demo-accounting-1-projects.html">
-                                Projects
-                            </a>
-                        </li> -->
-              <li>
-                <a
-                  class="text-color-grey text-color-hover-primary"
-                  target="_blank"
-                  href="demo-accounting-1-news.html"
-                >
-                  News
-                </a>
-              </li>
-              <li>
-                <a
-                  class="text-color-grey text-color-hover-primary"
-                  href="demo-accounting-1-contact.html"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-lg-4 pt-4 pt-lg-0">
-            <h4 class="text-color-dark font-weight-bold mb-3">Products</h4>
-            <ul class="list list-unstyled">
-              <!-- <li>
-                <a
-                  href="demo-accounting-1-process.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >About Compseqr360
-                </a>
-              </li> -->
-              <li>
-                <a
-                  href="demo-accounting-1-services-details.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >⁠ProEDox (Document Management System)</a
-                >
-              </li>
-              <li>
-                <a
-                  href="demo-accounting-1-1CAAN.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >CaaN (Compliance As An Application)</a
-                >
-              </li>
-              <li>
-                <a
-                  href="caas.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >CAAS (Compliance As An Service)</a
-                >
-              </li>
-              <li>
-                <a
-                  href="caap.html"
-                  class="text-color-grey text-color-hover-primary"
-                  >CaaP (Compliance As an Platform)</a
-                >
-              </li>
-              <!-- <li><a href="demo-accounting-1-services-details.html" class="text-color-grey text-color-hover-primary">Global Accounting</a></li>
-                        <li><a href="demo-accounting-1-services-details.html" class="text-color-grey text-color-hover-primary">Admin Services</a></li> -->
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-8">
-              <div class="d-flex align-items-center pt-2 pb-4">
-                <p class="d-inline-block mb-0 font-weight-bold line-height-1">
-                  <mark
-                    class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-8 mark-height-30 n-ls-5 p-0"
-                    >50+
-                  </mark>
-                </p>
-                <span
-                  class="custom-font-tertiary text-5 text-dark n-ls-1 fst-italic ps-2"
-                  >Man Years of Experience</span
-                >
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="feature-box feature-box-secondary align-items-center">
-                <div
-                  class="feature-box-icon feature-box-icon-lg p-static box-shadow-7"
-                >
-                  <img
-                    src="img/icons/email.svg"
-                    width="30"
-                    height="30"
-                    alt=""
-                    data-icon
-                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}"
-                  />
-                </div>
-                <div class="feature-box-info ps-2">
-                  <strong
-                    class="d-block text-uppercase text-color-secondary p-relative top-2"
-                    >Send E-mail</strong
-                  >
-                  <a
-                    href="mailto:info@compseqr.com"
-                    class="text-decoration-none font-secondary text-5 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap p-relative bottom-2"
-                    ><span
-                      class="__cf_email__"
-                      data-cfemail="156c7a6055717a78747c7b3b767a78"
-                      >info@compseqr.com
-                    </span></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-3 pt-4 pt-lg-0">
-                    <h4 class="text-color-dark font-weight-bold mb-3">Newsletter</h4>
-                    <p class="text-3-5 text-color-grey">Want to receive news and updates? Enter your email.</p>
-                    <div class="alert alert-success d-none" id="newsletterSuccess">
-                        <strong>Success!</strong> You've been added to our email list.
-                    </div>
-                    <div class="alert alert-danger d-none" id="newsletterError"></div>
-                    <form id="newsletterForm"
-                        action="https://www.okler.net/previews/porto/12.0.0/php/newsletter-subscribe.php"
-                        method="POST" class="mb-0">
-                        <div class="row">
-                            <div class="form-group col">
-                                <div class="position-relative">
-                                    <i
-                                        class="icons icon-envelope text-color-grey bg-light text-3-5 position-absolute right-15 top-50pct transform3dy-n50"></i>
-                                    <input type="email" value="" placeholder="Enter your e-mail"
-                                        class="form-control form-control-icon text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"
-                                        name="newsletterEmail" id="newsletterEmail">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col">
-                                <button type="submit"
-                                    class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium px-3 py-2 text-2-5 btn-swap-1"
-                                    data-clone-element="1">
-                                    <span>Submit <i class="fa-solid fa-arrow-right ms-2"></i></span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div> -->
-        </div>
-      </div>
-    </footer>
 	<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasMain"
 		aria-labelledby="offcanvasMain">
 		<div class="offcanvas-header">
@@ -790,10 +527,10 @@
 	<!-- <a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-accounting-1.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a>
 		
 		<a class="envato-buy-redirect" href="https://themeforest.net/checkout/from_item/4106987?license=regular&amp;support=bundle_6month&amp;ref=Okler" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Buy Porto"><i class="fas fa-shopping-cart"></i></a>
-		<a class="demos-redirect" href="index.html#demos" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Demos"><img alt="Demos" src="img/icons/demos-redirect.png" class="img-fluid" /></a> -->
-	<a class="demos-redirect" data-bs-toggle="modal" data-bs-animation="false" data-bs-target="#exampleModal"
+		<a class="demos-redirect" href="index.php#demos" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Demos"><img alt="Demos" src="img/icons/demos-redirect.png" class="img-fluid" /></a> -->
+	<!-- <a class="demos-redirect" data-bs-toggle="modal" data-bs-animation="false" data-bs-target="#exampleModal"
 		data-bs-placement="right" title="Demos"><img alt="Demos" src="img/icons/globe.png" class="img-fluid" />
-	</a>
+	</a> -->
 
 	<!-- Vendor -->
 	<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
@@ -813,7 +550,6 @@
 
 </body>
 
-<!-- Mirrored from www.okler.net/previews/porto/12.0.0/# by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Oct 2024 08:28:17 GMT -->
 
 </html>
 
