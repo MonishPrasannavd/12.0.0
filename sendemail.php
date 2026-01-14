@@ -45,14 +45,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';  // Set the SMTP server to send email
         $mail->SMTPAuth = true;
-        $mail->Username = 'monish.vadlamudi@ikonostechnologies.com'; // SMTP username
-        $mail->Password = 'yvyl iwue gphl cmwb'; // SMTP password
+        $mail->Username = 'info@compseqr.com'; // SMTP username
+        $mail->Password = 'ncrp rjkm alcv ganq'; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         //Recipients
-        $mail->setFrom('monish.vadlamudi@ikonostechnologies.com', 'Contact Form');
-        $mail->addAddress('monish.vadlamudi@ikonostechnologies.com', 'Recipient Name'); // Add a recipient
+        $mail->setFrom('info@compseqr.com', $name . ' <' . $email . '>');
+        $mail->addAddress('info@compseqr.com', 'Recipient Name'); // Add a recipient
         $mail->addReplyTo($email, $name); // Add reply-to address
 
         // Content

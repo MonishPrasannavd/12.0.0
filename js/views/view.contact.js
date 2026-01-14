@@ -91,17 +91,12 @@
             if (response == "success") {
               $messageSuccess.removeClass("d-none");
               $messageError.addClass("d-none");
-              $form
-                .find(".form-control")
-                .val("")
-                .blur()
-                .parent()
-                .removeClass("has-success")
-                .removeClass("has-danger")
-                .find("label.error")
-                .remove();
-              // Reset file inputs
-              $form.find('input[type="file"]').val("");
+              form.reset();
+              $form.validate().resetForm();
+              $form.find(".form-control").blur();
+              setTimeout(function() {
+                $messageSuccess.addClass('d-none');
+              }, 5000);
               if ($messageSuccess.length && $messageSuccess.offset() && $messageSuccess.offset().top - 80 < $(window).scrollTop()) {
                 $("html, body").animate(
                   { scrollTop: $messageSuccess.offset().top - 80 },
@@ -229,17 +224,12 @@
               if (response == "success") {
                 $messageSuccess.removeClass("d-none");
                 $messageError.addClass("d-none");
-                $form
-                  .find(".form-control")
-                  .val("")
-                  .blur()
-                  .parent()
-                  .removeClass("has-success")
-                  .removeClass("has-danger")
-                  .find("label.error")
-                  .remove();
-                // Reset file inputs
-                $form.find('input[type="file"]').val("");
+                form.reset();
+                $form.validate().resetForm();
+                $form.find(".form-control").blur();
+                setTimeout(function() {
+                  $messageSuccess.addClass('d-none');
+                }, 5000);
                 if ($messageSuccess.length && $messageSuccess.offset() && $messageSuccess.offset().top - 80 < $(window).scrollTop()) {
                   $("html, body").animate(
                     { scrollTop: $messageSuccess.offset().top - 80 },
