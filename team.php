@@ -248,12 +248,12 @@
                                   </p>
                                   <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
                                     <ul class="social-icons social-icons-clean social-icons-medium">
-                                      <li class="social-icons-instagram">
-                                        <a href="http://www.instagram.com/" target="_blank" title="Instagram">
-                                          <i class="fab fa-instagram"></i>
+                                      <li class="social-icons-linkedin">
+                                        <a href="https://www.linkedin.com/in/revathi-gollapudi-06739417" target="_blank" title="Instagram">
+                                          <i class="fab fa-linkedin"></i>
                                         </a>
                                       </li>
-                                      <li class="social-icons-x">
+                                      <!-- <li class="social-icons-x">
                                         <a href="http://www.x.com/" target="_blank" title="X">
                                           <i class="fab fa-x-twitter"></i>
                                         </a>
@@ -262,7 +262,7 @@
                                         <a href="http://www.facebook.com/" target="_blank" title="Facebook">
                                           <i class="fab fa-facebook-f"></i>
                                         </a>
-                                      </li>
+                                      </li> -->
                                     </ul>
                                   </span>
                                 </span>
