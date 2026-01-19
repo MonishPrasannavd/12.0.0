@@ -151,7 +151,7 @@
                                   <p class="line-height-7 text-3 mb-0">
                                     Founder
                                   </p>
-                                  <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
+                                  <!-- <span class="thumb-info-content-inner-hidden p-absolute d-block w-100 py-3">
                                     <ul class="social-icons social-icons-clean social-icons-medium">
                                       <li class="social-icons-instagram">
                                         <a href="http://www.instagram.com/" target="_blank" title="Instagram">
@@ -169,7 +169,7 @@
                                         </a>
                                       </li>
                                     </ul>
-                                  </span>
+                                  </span> -->
                                 </span>
                               </span>
                             </span>
@@ -367,7 +367,25 @@
                                   <p class="line-height-7 text-3 mb-0 ps-3">
                                     <b>Director</b>
                                   </p>
+                                  
                                 </span>
+                                <ul class="social-icons social-icons-clean social-icons-medium ms-2">
+                                      <li class="social-icons-linkedin">
+                                        <a href="https://www.linkedin.com/in/dr-sp-85013844/" target="_blank" title="Instagram">
+                                          <i class="fab fa-linkedin"></i>
+                                        </a>
+                                      </li>
+                                      <!-- <li class="social-icons-x">
+                                        <a href="http://www.x.com/" target="_blank" title="X">
+                                          <i class="fab fa-x-twitter"></i>
+                                        </a>
+                                      </li>
+                                      <li class="social-icons-facebook">
+                                        <a href="http://www.facebook.com/" target="_blank" title="Facebook">
+                                          <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                      </li> -->
+                                </ul>
                               </span>
                             </div>
                             <div class="col-lg-12">
@@ -406,6 +424,23 @@
                                   <p class="line-height-7 text-3 mb-0 ps-3">
                                     <b>Consultant - Product Architecture</b>
                                   </p>
+                                   <ul class="social-icons social-icons-clean social-icons-medium ms-2">
+                                      <li class="social-icons-linkedin">
+                                        <a href="https://www.linkedin.com/in/vishnu-sai-prithvi-addanki-51344155?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="Instagram">
+                                          <i class="fab fa-linkedin"></i>
+                                        </a>
+                                      </li>
+                                      <!-- <li class="social-icons-x">
+                                        <a href="http://www.x.com/" target="_blank" title="X">
+                                          <i class="fab fa-x-twitter"></i>
+                                        </a>
+                                      </li>
+                                      <li class="social-icons-facebook">
+                                        <a href="http://www.facebook.com/" target="_blank" title="Facebook">
+                                          <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                      </li> -->
+                                </ul>
                                 </span>
                               </span>
                             </div>
@@ -434,6 +469,23 @@
                                   <p class="line-height-7 text-3 mb-0 ps-3">
                                     <b>Consultant - Product Development</b>
                                   </p>
+                                   <ul class="social-icons social-icons-clean social-icons-medium ms-2">
+                                      <li class="social-icons-linkedin">
+                                        <a href="https://www.linkedin.com/in/srinivas-puranam?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="Instagram">
+                                          <i class="fab fa-linkedin"></i>
+                                        </a>
+                                      </li>
+                                      <!-- <li class="social-icons-x">
+                                        <a href="http://www.x.com/" target="_blank" title="X">
+                                          <i class="fab fa-x-twitter"></i>
+                                        </a>
+                                      </li>
+                                      <li class="social-icons-facebook">
+                                        <a href="http://www.facebook.com/" target="_blank" title="Facebook">
+                                          <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                      </li> -->
+                                </ul>
                                 </span>
                               </span>
                             </div>
